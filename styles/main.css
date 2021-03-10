@@ -2,17 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap'); /*Font light-bold*/
 @import url('https://fonts.googleapis.com/css2?family=Martel:wght@300;400;700;800&display=swap'); /*light-regular-bold-extraBold*/
 
-
+html{
+    overflow-y: scroll;
+    margin: 0;
+}
 body{
     background-color: blanchedalmond;
-    display: flex;
-    position: fixed;
- 
+    margin: 0;
 }
+
 
 header{
     display: flex;
     position: fixed;
+    margin: 0;
 }
 
  .helpBar {
@@ -40,7 +43,7 @@ header{
 }
 
 
-.MenuPrincipal {
+.principalMenu {
     background-color: #A1002A;
     display: flex;
     position: fixed;
@@ -57,25 +60,69 @@ header{
 
 .buttonsBar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: auto;
+
 }
 
 .searchBar {
     background-color: #FAF5F5;
+    display: flex;
     padding: 8px;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .searchInput {
     background-color: #FAF5F5;
-    border-radius: 10px;
-    border: 2;
+    border-radius: 5px;
+    border: 1;
     outline: none;
-    font-size: 15px;
-    align-items: center;
+    font-size: 20px;
+}
 
+.suscribe {
+    background-color: #ECC9C7;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 30px;
+    height: 30px;
+    margin: auto;
+}
 
+.login {
+    background-color: #ECC9C7;
+    justify-content: center;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 30px;
+    height: 30px;
+    width: 130px;
+    margin: auto;
+}
+
+.bookOptions {
+    background-color: #A1002A;
+    color:#FAF5F5 ;
+    font-family: 'Martel';
+    display: flex;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-right: 30px;
+}
+
+.shopButton {
+    background-color: #ECC9C7;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 30px;
+    height: 30px;
+    margin: auto;
+    width: 130px;
+}
+
+.banner {
+    margin-top: 145px;
+    margin-bottom: 35px;
 }
