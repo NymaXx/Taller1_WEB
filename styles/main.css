@@ -4,19 +4,18 @@
 
 
 body{
-    display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    background-color: blanchedalmond;
+    display: flex;
+    position: fixed;
  
 }
 
-main{
-    background-color: blanchedalmond;
-    display: flex;;
+header{
+    display: flex;
+    position: fixed;
 }
 
- header {
-     
+ .helpBar {
     background-color: #E42E5D;
     font-family: 'Martel';
     color: #F1DDD2;
@@ -30,14 +29,53 @@ main{
     justify-content: space-between;
     height: 20px;
     align-items: center;
-   
-   
 }
-h1 {
+.not1 {
     font-weight: 300;
     font-size: 12px;
 }
-h2 {
+.helpText {
     font-weight: 700;
     font-size: 12px;
+}
+
+
+.MenuPrincipal {
+    background-color: #A1002A;
+    display: flex;
+    position: fixed;
+    padding-top: 10px;
+    padding-left: 1.5%;
+    top:20px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    height: 86px;
+}
+
+
+
+.buttonsBar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.searchBar {
+    background-color: #FAF5F5;
+    padding: 8px;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.searchInput {
+    background-color: #FAF5F5;
+    border-radius: 10px;
+    border: 2;
+    outline: none;
+    font-size: 15px;
+    align-items: center;
+
+
 }
