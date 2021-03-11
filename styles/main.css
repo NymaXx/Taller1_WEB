@@ -9,13 +9,17 @@ html{
 body{
     background-color: blanchedalmond;
     margin: 0;
+    position: fixed;
 }
-
 
 header{
     display: flex;
     position: fixed;
     margin: 0;
+}
+.contentHead {
+    display: flex;
+    position: relative;
 }
 
  .helpBar {
@@ -63,6 +67,7 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
     margin: auto;
+    margin-right: 3%;
 
 }
 
@@ -72,6 +77,7 @@ header{
     padding: 8px;
     align-items: center;
     border-radius: 20px;
+    margin-left: 15%;
 }
 
 .searchInput {
@@ -102,24 +108,49 @@ header{
     margin: auto;
 }
 
-.bookOptions {
-    background-color: #A1002A;
-    color:#FAF5F5 ;
-    font-family: 'Martel';
+.bookOptions1 {
     display: flex;
+    position: fixed;
+    background-color: #A1002A;
+    color:#FAF5F5;
+    font-family: 'Martel';
+    margin: auto;
+    width: 100%;
+    flex-wrap: wrap ;
+    justify-content: center;
+}
+
+.bookOptions2 {
+    list-style-type: none;
+    padding-left: 3.5%;
+    
+}
+
+.bookOptions3 {
+    float: left;
     text-align: center;
-    margin-bottom: 8px;
-    margin-right: 30px;
+    margin-bottom: 0px;
+    padding: 0px 20px;
+    top: 0px;
+    margin-right: 45px;
+   
+
 }
 
 .shopButton {
     background-color: #ECC9C7;
+    justify-content: center;
     padding: 8px;
     margin-top: 8px;
     border-radius: 30px;
     height: 30px;
-    margin: auto;
     width: 130px;
+    margin: auto;
+    margin-right: 3%;
+}
+
+.shopButton2 {
+    margin-left: 35%;
 }
 
 .banner {
