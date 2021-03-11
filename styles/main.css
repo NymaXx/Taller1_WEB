@@ -161,6 +161,7 @@ ul {
 }
 
 .banner {
+    display: flex;
     margin-top: 180px;
 }
 
@@ -170,4 +171,36 @@ ul {
     margin-bottom: 1%;
     margin-top: 1%;
 }
+
+.publicidad {
+    display: flex;
+}
+
+.presLibro {
+    background-color: blanchedalmond;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.title {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color:#5E0019;
+    color:#FAF5F5; 
+    font-family: 'Martel';
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    padding: 1%;
+}
+
+.title2 {
+    list-style-type: none;
+    text-align: center;
+}
+
 
