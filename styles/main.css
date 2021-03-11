@@ -9,7 +9,6 @@ html{
 body{
     background-color: blanchedalmond;
     margin: 0;
-    position: fixed;
 }
 
 header{
@@ -157,3 +156,4 @@ header{
     margin-top: 145px;
     margin-bottom: 35px;
 }
+
