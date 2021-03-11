@@ -6,6 +6,12 @@ html{
     overflow-y: scroll;
     margin: 0;
 }
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;  
+}
 body{
     background-color: blanchedalmond;
     margin: 0;
@@ -63,7 +69,6 @@ header{
 
 .buttonsBar {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     margin: auto;
     margin-right: 3%;
@@ -82,7 +87,7 @@ header{
 .searchInput {
     background-color: #FAF5F5;
     border-radius: 5px;
-    border: 1;
+    border: 0;
     outline: none;
     font-size: 20px;
 }
@@ -113,16 +118,20 @@ header{
     background-color: #A1002A;
     color:#FAF5F5;
     font-family: 'Martel';
-    margin: auto;
     width: 100%;
     flex-wrap: wrap ;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 109px;
+}
+ul {
+    margin-block-start: 0.7em;
+    margin-block-end: 0.7em;
 }
 
 .bookOptions2 {
     list-style-type: none;
+    display: flex;
     padding-left: 3.5%;
-    
 }
 
 .bookOptions3 {
@@ -132,8 +141,6 @@ header{
     padding: 0px 20px;
     top: 0px;
     margin-right: 45px;
-   
-
 }
 
 .shopButton {
@@ -142,18 +149,25 @@ header{
     padding: 8px;
     margin-top: 8px;
     border-radius: 30px;
-    height: 30px;
+    height: 20px;
     width: 130px;
     margin: auto;
     margin-right: 3%;
 }
 
 .shopButton2 {
-    margin-left: 35%;
+    margin-left: 35%;   
+    margin-bottom: 15%;
 }
 
 .banner {
-    margin-top: 145px;
-    margin-bottom: 35px;
+    margin-top: 180px;
+}
+
+.separator {
+    display: flex;
+    margin: auto;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 
