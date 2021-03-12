@@ -157,6 +157,7 @@ ul {
 }
 
 .banner {
+    width: 100%;
     display: flex;
     margin-top: 180px;
 }
@@ -169,6 +170,7 @@ ul {
 }
 
 .publicidad {
+    width: 100%;
     display: flex;
 }
 
@@ -181,6 +183,7 @@ ul {
 }
 
 .title {
+    width: 100%;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -195,17 +198,49 @@ ul {
 }
 
 .title2 {
+
     list-style-type: none;
     text-align: center;
 }
 
 .char1 {
-    background-color: #A1002A;
+    display: flex;
+    width: 100%;
+    background-color: blanchedalmond;
     margin-bottom: 1%;
     margin-top: 1%;
     padding: 1%;
     
     
+}
+
+.char1_Fondo {
+    width: 100%;
+    display: flex;
+    background-image: url(../img/fondoCHAR1.png);
+    background-size:inherit ;
+    background-position: center;
+}
+
+.char1_elements {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book {
+    display: flex;
+    margin-left: 47%;
+
+}
+
+.sinopsis {
+    display: flex;
+}
+
+.ranking {
+    display: flex;
+
 }
 
 
