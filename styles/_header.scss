@@ -1,0 +1,121 @@
+header{
+    display: flex;
+    position: fixed;
+    margin: 0;
+}
+.contentHead {
+    display: flex;
+    position: relative;
+}
+
+ .helpBar {
+    background-color: #E42E5D;
+    font-family: 'Martel';
+    color: #F1DDD2;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    justify-content: space-between;
+    height: 20px;
+    align-items: center;
+}
+.not1 {
+    font-weight: 300;
+    font-size: 12px;
+}
+.helpText {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+
+.principalMenu {
+    background-color: #A1002A;
+    display: flex;
+    position: fixed;
+    padding-top: 10px;
+    padding-left: 1.5%;
+    top:20px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    height: 70px;
+}
+
+
+
+.buttonsBar {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-right: 3%;
+    
+    margin-bottom: 1em;
+    
+
+}
+
+.searchBar {
+    background-color: #FAF5F5;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 15%;
+}
+
+.searchInput {
+    background-color: #FAF5F5;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+}
+
+
+.bookOptions1 {
+    display: flex;
+    position: fixed;
+    background-color: #A1002A;
+    color:#FAF5F5;
+    font-family: 'Martel';
+    width: 100%;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+ul {
+    margin-block-start: 0.7em;
+    margin-block-end: 0.7em;
+}
+
+.bookOptions2 {
+    list-style-type: none;
+    display: flex;
+    padding-left: 3.5%;
+}
+
+.bookOptions3 {
+    float: left;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 0px 20px;
+    top: 0px;
+    margin-right: 45px;
+}
+
+.shopButton {
+    justify-content: center;
+    border-radius: 30px;
+    height: 20px;
+}
+
+.shopButton2 {  
+    padding-top: 0;
+    margin-right: 2.5em;
+    margin-bottom: 1em;
+}

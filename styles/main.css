@@ -209,7 +209,6 @@ ul {
     background-color: blanchedalmond;
     margin-bottom: 1%;
     margin-top: 1%;
-    padding: 1%;
     
     
 }
@@ -225,17 +224,17 @@ ul {
 .char1_elements {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .book {
     display: flex;
-    margin-left: 47%;
 
 }
 
 .sinopsis {
     display: flex;
+    margin-right: 150px;
 }
 
 .ranking {
