@@ -1,0 +1,79 @@
+.presLibro {
+    background-color: blanchedalmond;
+    color:#FAF5F5; 
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1%;
+    margin-top: 1%;
+
+
+    &__title {
+        width: 100%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        background-color:#5E0019;
+        font-family: 'Martel';
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 2%;
+        margin-top: 1%;
+    }
+    
+    &__title2 {
+    
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    &__char1 {
+        display: flex;
+        width: 100%;
+        background-color: blanchedalmond;
+        margin-top: 1%;
+        
+        
+    }
+    
+    &__fondo {
+        background-image: url(../img/fondoCHAR1.png);
+        background-image: url(../img/FONDOprueba.png);
+        width: 100%;
+        background-size: auto ;
+        background-position: bottom;
+    }
+    
+    &__elements {
+        width: 100%;
+        display: flex;
+        font-family: 'Montserrat';
+        
+        
+    }
+    
+    &__book {
+        display: flex;
+        height: 90%;
+        margin-left: 5%;
+    
+    }
+    
+    &__sinopsis {
+        width: 40%;
+        margin-top: 7%;
+        margin-left: 15%;
+        font-size: 14px ;
+    }
+    
+    &__ranking {
+        display: flex;
+        margin-top: 19%;
+        font-size: 18px ;
+        text-align: center;
+        margin-right: 3%;
+        margin-left: 3%;
+    
+    }
+    
+}
+
