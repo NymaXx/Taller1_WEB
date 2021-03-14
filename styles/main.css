@@ -394,4 +394,48 @@ ul {
 }
 .newsletter__suscribeBtn {
   margin-left: 3%;
+}
+
+.footer {
+  background-color: #5E0019;
+  width: 100%;
+  padding-top: 2%;
+  font-family: "Montserrat";
+  color: #FAF5F5;
+}
+.footer__logo {
+  display: flex;
+  justify-content: center;
+}
+.footer__phrase {
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+.footer__links {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 5%;
+}
+.footer__link1 {
+  list-style-type: none;
+  margin-left: 1%;
+}
+.footer__link2 {
+  list-style-type: none;
+}
+.footer__link3 {
+  list-style-type: none;
+}
+.footer__link4 {
+  list-style-type: none;
+  margin-right: 5%;
+}
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
 }/*# sourceMappingURL=main.css.map */
