@@ -3,44 +3,57 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    font-family: 'Montserrat';
+    margin-top: 5%;
 
     &__cards {
         margin-top: 6%;
         margin-left: 3%;
+        margin-right: 5%;
+        width: 50%;
         display: flex;
-
     }
 
     &__cardText {
         list-style-type: none;
         text-align: center;
-        margin-top: 6%;
-        margin-left: 3%;
-        display: flex;
-
+        margin-top: 16%;
+        color:#FAF5F5; 
     }
 
     &__cardText2 {
-        
+        font-size: 18px;
     }
 
     &__cardText3 {
-        
+        font-size: 12px;
     }
 
     &__pdf {
+        margin-right: 5%;
+        width: 50%;
+        display: flex;
+        
         
     }
 
     &__pdfText {
+        list-style-type: none;
+        text-align: center;
+        margin-top: 30%;
+        color:#FAF5F5; 
+        margin-right: 3%;
         
     }
 
     &__pdfText2 {
+        font-size: 18px;
+        
         
     }
 
     &__pdfText3 {
+        font-size: 12px;
         
     }
 

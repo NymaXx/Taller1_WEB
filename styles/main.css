@@ -228,19 +228,47 @@ ul {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  font-family: "Montserrat";
+  margin-top: 5%;
 }
 .description__cards {
   margin-top: 6%;
   margin-left: 3%;
+  margin-right: 5%;
+  width: 50%;
   display: flex;
 }
 .description__cardText {
   list-style-type: none;
   text-align: center;
-  margin-top: 6%;
-  margin-left: 3%;
+  margin-top: 16%;
+  color: #FAF5F5;
+}
+.description__cardText2 {
+  font-size: 18px;
+}
+.description__cardText3 {
+  font-size: 12px;
+}
+.description__pdf {
+  margin-right: 5%;
+  width: 50%;
   display: flex;
 }
+.description__pdfText {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 30%;
+  color: #FAF5F5;
+  margin-right: 3%;
+}
+.description__pdfText2 {
+  font-size: 18px;
+}
+.description__pdfText3 {
+  font-size: 12px;
+}
+
 .fichaTecnica {
   background-color: lawngreen;
 }/*# sourceMappingURL=main.css.map */
