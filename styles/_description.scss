@@ -1,0 +1,47 @@
+.description {
+    background-image: url(../img/fondoChar2.png);
+    display: flex;
+    flex-direction: row;
+
+    &__cards{
+        background: #cc1717;
+    }
+
+    &__cardText {
+        background: #cc1717;
+
+    }
+
+    &__cardText2 {
+        background: #cc1717;
+
+    }
+
+    &__cardText3 {
+        background: #cc1717;
+        
+    }
+
+
+     &__pdf{
+
+        background: #cc1717;
+    }
+
+    &__pdfText {
+        background: #cc1717;
+
+    }
+
+    &__pdfText2 {
+        background: #cc1717;
+
+    }
+
+    &__pdfText3 {
+        background: #cc1717;
+        
+    }
+
+
+}
