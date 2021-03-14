@@ -1,3 +1,66 @@
 .fichaTecnica {
-    background-color: lawngreen;
+    background-color: rgb(255, 248, 236);
+   
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1%;
+    margin-top: 5%;
+
+    &__title {
+        width: 100%;
+        background-color:#5E0019;
+        font-family: 'Martel';
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        color:#FAF5F5; 
+        padding-bottom: 0.8%;
+        padding-top: 0.8%;
+    }
+
+    &__tablas {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        color:#181818; 
+        font-size: 18px;
+        font-family: 'Montserrat';
+       
+    }
+
+    &__tabla1 {
+        margin-top: 2%;
+        margin-left: 10%;
+        margin-bottom: 2%;
+    }
+
+    &__tabla2 {
+        margin-top: 2%;
+        padding-right: 7%;
+        margin-bottom: 2%;
+    }
+
+    &__middle {
+        margin-top: 0%;
+        width: 0.3%;
+        background-color:#5E0019;
+    }
+
+    tbody{
+        width: 100%;
+    }
+
+    tr{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    td {
+        padding:2%; 
+        width: 200px;
+
+    }
+
+    
 }

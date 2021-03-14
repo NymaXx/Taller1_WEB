@@ -14,7 +14,7 @@ main {
 }
 
 body {
-  background-color: blanchedalmond;
+  background-color: #fff8ec;
   margin: 0;
 }
 
@@ -161,7 +161,7 @@ ul {
 }
 
 .presLibro {
-  background-color: blanchedalmond;
+  background-color: #fff8ec;
   color: #FAF5F5;
   width: 100%;
   margin: auto;
@@ -187,7 +187,7 @@ ul {
 .presLibro__char1 {
   display: flex;
   width: 100%;
-  background-color: blanchedalmond;
+  background-color: #fff8ec;
   margin-top: 1%;
 }
 .presLibro__fondo {
@@ -270,5 +270,55 @@ ul {
 }
 
 .fichaTecnica {
-  background-color: lawngreen;
+  background-color: #fff8ec;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 1%;
+  margin-top: 5%;
+}
+.fichaTecnica__title {
+  width: 100%;
+  background-color: #5E0019;
+  font-family: "Martel";
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  color: #FAF5F5;
+  padding-bottom: 0.8%;
+  padding-top: 0.8%;
+}
+.fichaTecnica__tablas {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #181818;
+  font-size: 18px;
+  font-family: "Montserrat";
+}
+.fichaTecnica__tabla1 {
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-bottom: 2%;
+}
+.fichaTecnica__tabla2 {
+  margin-top: 2%;
+  padding-right: 7%;
+  margin-bottom: 2%;
+}
+.fichaTecnica__middle {
+  margin-top: 0%;
+  width: 0.3%;
+  background-color: #5E0019;
+}
+.fichaTecnica tbody {
+  width: 100%;
+}
+.fichaTecnica tr {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.fichaTecnica td {
+  padding: 2%;
+  width: 200px;
 }/*# sourceMappingURL=main.css.map */
