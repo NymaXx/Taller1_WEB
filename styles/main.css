@@ -211,7 +211,8 @@ ul {
   width: 40%;
   margin-top: 7%;
   margin-left: 15%;
-  font-size: 14px;
+  font-size: 12px;
+  display: flex;
 }
 .presLibro__ranking {
   display: flex;
@@ -220,4 +221,26 @@ ul {
   text-align: center;
   margin-right: 3%;
   margin-left: 3%;
+}
+
+.description {
+  background-image: url(../img/fondoChar2_1.png);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.description__cards {
+  margin-top: 6%;
+  margin-left: 3%;
+  display: flex;
+}
+.description__cardText {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 6%;
+  margin-left: 3%;
+  display: flex;
+}
+.fichaTecnica {
+  background-color: lawngreen;
 }/*# sourceMappingURL=main.css.map */
