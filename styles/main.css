@@ -14,7 +14,7 @@ main {
 }
 
 body {
-  background-color: #fff8ec;
+  background-color: #ffeaef;
   margin: 0;
 }
 
@@ -29,6 +29,7 @@ ul {
   display: flex;
   position: fixed;
   margin: 0;
+  z-index: 5;
 }
 .header__nav {
   display: flex;
@@ -337,15 +338,20 @@ ul {
   padding-bottom: 0.8%;
   padding-top: 0.8%;
 }
-.galery__carousal {
-  width: 100%;
+.galery__carrousel {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
   overflow: hidden;
 }
-.galery__photos {
+.galery__slyder {
   display: flex;
   margin: 4%;
   justify-content: center;
   align-items: center;
+}
+.galery__slide {
+  flex-shrink: 0;
 }
 
 .newsletter {
