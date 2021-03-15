@@ -30,7 +30,7 @@
     }
 
     &__pdf {
-        margin-right: 5%;
+        margin-right: 3%;
         width: 50%;
         display: flex;
         
@@ -56,6 +56,39 @@
         font-size: 12px;
         
     }
+
+    &__carrousel {
+        display: flex;
+        width: 31%;
+        margin-left: 7%;
+        padding-left: 1%;
+        overflow: hidden;
+        border-radius: 10%;
+    }
+
+    &__slyder {
+        display: flex;
+        margin-left: 8%;
+        margin-left: 1%;
+        margin-right: 15%;
+        align-items:center;
+        transition: transform 700ms ease-in-out;
+       
+
+    }
+
+    &__slide {
+        margin-top: 1%;
+       
+        position: relative;
+    }
+
+    &__mockup {
+        position: absolute;
+        z-index: 1;
+    }
+
+    
 
 
 }

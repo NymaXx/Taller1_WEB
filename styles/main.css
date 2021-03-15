@@ -162,7 +162,6 @@ ul {
 }
 
 .presLibro {
-  background-color: #fff8ec;
   color: #FAF5F5;
   width: 100%;
   margin: auto;
@@ -188,7 +187,6 @@ ul {
 .presLibro__char1 {
   display: flex;
   width: 100%;
-  background-color: #fff8ec;
   margin-top: 1%;
 }
 .presLibro__fondo {
@@ -252,7 +250,7 @@ ul {
   font-size: 12px;
 }
 .description__pdf {
-  margin-right: 5%;
+  margin-right: 3%;
   width: 50%;
   display: flex;
 }
@@ -268,6 +266,30 @@ ul {
 }
 .description__pdfText3 {
   font-size: 12px;
+}
+.description__carrousel {
+  display: flex;
+  width: 31%;
+  margin-left: 7%;
+  padding-left: 1%;
+  overflow: hidden;
+  border-radius: 10%;
+}
+.description__slyder {
+  display: flex;
+  margin-left: 8%;
+  margin-left: 1%;
+  margin-right: 15%;
+  align-items: center;
+  transition: transform 700ms ease-in-out;
+}
+.description__slide {
+  margin-top: 1%;
+  position: relative;
+}
+.description__mockup {
+  position: absolute;
+  z-index: 1;
 }
 
 .fichaTecnica {
@@ -349,6 +371,7 @@ ul {
   margin: 4%;
   justify-content: center;
   align-items: center;
+  transition: transform 700ms ease-in-out;
 }
 .galery__slide {
   flex-shrink: 0;

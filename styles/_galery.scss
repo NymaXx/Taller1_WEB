@@ -28,6 +28,7 @@
         margin: 4%;
         justify-content: center;
         align-items:center;
+        transition: transform 700ms ease-in-out;
     }
 
     &__slide {
