@@ -17,7 +17,7 @@
     &__cardText {
         list-style-type: none;
         text-align: center;
-        margin-top: 16%;
+        margin-top: 20%;
         color:#FAF5F5; 
     }
 
@@ -40,9 +40,9 @@
     &__pdfText {
         list-style-type: none;
         text-align: center;
-        margin-top: 30%;
+        margin-top: 28%;
         color:#FAF5F5; 
-        margin-right: 3%;
+        margin-right: 4%;
         
     }
 
@@ -59,18 +59,17 @@
 
     &__carrousel {
         display: flex;
-        width: 31%;
-        margin-left: 7%;
-        padding-left: 1%;
+        width: 32%;
+        //margin-left: 7%;
         overflow: hidden;
         border-radius: 10%;
+        
     }
 
     &__slyder {
         display: flex;
-        margin-left: 8%;
-        margin-left: 1%;
-        margin-right: 15%;
+        margin-left: 5%;
+        margin-right: 10%;
         align-items:center;
         transition: transform 700ms ease-in-out;
        
