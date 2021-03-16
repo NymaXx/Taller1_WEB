@@ -29,7 +29,7 @@ ul {
   display: flex;
   position: fixed;
   margin: 0;
-  z-index: 5;
+  z-index: 4;
 }
 .header__nav {
   display: flex;
@@ -146,6 +146,7 @@ ul {
 .banner {
   width: 100%;
   display: flex;
+  justify-content: flex-end;
   margin-top: 180px;
 }
 
@@ -159,6 +160,7 @@ ul {
 .publicidad {
   width: 100%;
   display: flex;
+  justify-content: flex-end;
 }
 
 .presLibro {
@@ -289,10 +291,49 @@ ul {
   z-index: 1;
 }
 
+.modal {
+  display: flex;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: none;
+  z-index: 5;
+}
+.modal__content {
+  padding-bottom: 20px;
+  margin: 3% auto;
+  width: 100%;
+  max-width: 400px;
+  max-height: 470px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10%;
+  border-right: 20%;
+}
+.modal__slyder {
+  margin-left: 3.5%;
+  margin-top: 3%;
+  margin-right: 10%;
+  align-items: center;
+  transition: transform 700ms ease-in-out;
+}
+.modal__slide {
+  margin-top: 1%;
+  position: relative;
+}
+.modal__mockup {
+  position: absolute;
+  z-index: 1;
+}
+
 .fichaTecnica {
   width: 100%;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 .fichaTecnica__title {
   width: 100%;
@@ -345,6 +386,7 @@ ul {
   width: 100%;
   margin-bottom: 1%;
   background-color: #ECC9C7;
+  z-index: 3;
 }
 .galery__title {
   width: 100%;
@@ -464,4 +506,15 @@ ul {
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
+}
+
+.btninteract {
+  color: #FAF5F5;
+  background-color: #5E0019;
+  display: flex;
+  margin-left: 83%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  border-radius: 15%;
+  border-color: #5E0019;
 }/*# sourceMappingURL=main.css.map */
