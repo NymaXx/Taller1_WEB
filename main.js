@@ -35,25 +35,47 @@ setInterval(handlePdfInterval, 2500);
 
 const btnOpenModal = document.querySelector('.btninteract');
 const modal = document.querySelector('.modal');
+const backdrop = document.querySelector('.modal__backdrop');
+
+function handleModalAppear(){
+    modal.style.opacity = 1;
+}
 
 function handleOpenModal () {
   modal.style.display = 'block';
   document.body.style.overflow = 'hidden';
+
+  setTimeout(handleModalAppear, 1);
 }
 
+function handleCloseModal(){
+    modal.style.opacity = 0;
+    document.body.style.overflow = 'initial';
+    setTimeout(function (){
+        modal.style.display = 'none';
+    }, 500);
+}
+
+
+
+backdrop.addEventListener('click', handleCloseModal);
 btnOpenModal.addEventListener('click', handleOpenModal);
+
 
 //modal animation
 
 const modalSlyder = document.querySelector('.modal__slyder');
 let currentModalSlide = 0;
-function handlePdfInterval(){
+function handleModalInterval(){
     currentModalSlide++;
     if(currentModalSlide >=8){
         currentModalSlide =0;
     }
-    modalSlyder.style.transform = `translate(0px, -${ 239 * currentModalSlide }px)`;
+    modalSlyder.style.transform = `translate(0px, -${ 478 * currentModalSlide }px)`;
     console.log("sfunciona");
 }
 
-setInterval(handlePdfInterval, 2500);
+setInterval(handleModalInterval, 3500);
+
+
+//Menu hamburguesa modal
