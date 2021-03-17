@@ -1,10 +1,48 @@
 .banner {
     width: 100%;
     margin-top: 180px;
+    align-items: center;
+    position: relative;
 
-    img{
-        width: 100%;
+
+    &__fondoLib {
+        width: 80%;
+        height: 450px;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-image: url(../img/fondoBANNER.png);
+        background-size: cover ;
+        background-position: bottom;
+        justify-content: center;
     }
+
+    &__textt {
+        position: absolute;
+        background-color: #5E001980;
+        color: #FFFF; 
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    &__textt2 {
+        font-family: 'Montserrat';
+        font-size: 35px;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 2%;
+        opacity: 1;
+    }
+
+    &__textt3 {
+        font-family: 'Martel';
+        font-size: 20px;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+
+
 
     @media (max-width: 700px) {  
 
@@ -12,6 +50,24 @@
             justify-content: center;
             img{
                 width: 100%;
+            }
+
+            &__fondoLib {
+                height: 400px;
+            }
+            
+            &__textt{
+                margin-top: 28%;
+            }
+
+            &__textt2{
+                padding-left: 3%;
+                padding-right: 3%;
+                font-size: 25px;
+            }
+            
+            &__textt3 {
+                font-size: 15px;
             }
         }
     }

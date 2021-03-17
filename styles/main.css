@@ -194,9 +194,40 @@ ul {
 .banner {
   width: 100%;
   margin-top: 180px;
+  align-items: center;
+  position: relative;
 }
-.banner img {
+.banner__fondoLib {
+  width: 80%;
+  height: 450px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-image: url(../img/fondoBANNER.png);
+  background-size: cover;
+  background-position: bottom;
+  justify-content: center;
+}
+.banner__textt {
+  position: absolute;
+  background-color: #5E001980;
+  color: #FFFF;
   width: 100%;
+  margin-top: 10%;
+}
+.banner__textt2 {
+  font-family: "Montserrat";
+  font-size: 35px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 2%;
+  opacity: 1;
+}
+.banner__textt3 {
+  font-family: "Martel";
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2%;
 }
 @media (max-width: 700px) {
   .banner .banner {
@@ -205,6 +236,20 @@ ul {
   .banner .banner img {
     width: 100%;
   }
+  .banner .banner__fondoLib {
+    height: 400px;
+  }
+  .banner .banner__textt {
+    margin-top: 28%;
+  }
+  .banner .banner__textt2 {
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 25px;
+  }
+  .banner .banner__textt3 {
+    font-size: 15px;
+  }
 }
 
 .separator {
@@ -212,8 +257,9 @@ ul {
   margin: auto;
   margin-bottom: 1%;
   margin-top: 1%;
+  width: 100%;
+  justify-content: center;
 }
-
 .publicidad {
   width: 100%;
   display: flex;
