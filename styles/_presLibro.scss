@@ -29,6 +29,7 @@
         display: flex;
         width: 100%;
         margin-top: 1%;
+        flex-wrap: wrap;
         
         
     }
@@ -72,6 +73,54 @@
         margin-right: 3%;
         margin-left: 3%;
     
+    }
+
+    &__sinopsisResponsive {
+        display: none;
+    }
+
+    @media (max-width: 700px) { 
+        
+        &__title {
+            font-size: 18px;
+        }
+
+        
+        &__fondo {
+            width: 100%;
+            background-size: cover ;
+            background-position: bottom;
+        }
+        
+        &__elements {
+            display: flex;
+        }
+
+        &__sinopsis {
+            display: none;
+        }
+
+        &__sinopsisResponsive {
+            display: flex;
+            color: #5E0019;
+            text-align: center;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            padding: 7%;
+        }
+        
+        &__imgBook {
+            width: 200px;
+        }
+        
+        
+        &__ranking {
+           margin-top: 26%;
+           order: 1;
+           font-size: 14px;
+        }
+
+
     }
     
 }
