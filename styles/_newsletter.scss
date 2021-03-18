@@ -51,4 +51,16 @@
     &__suscribeBtn {
         margin-left: 3%;
     }
+
+    @media (max-width: 700px) {  
+        padding-left: 5%;
+
+        &__question{
+            display: inherit;
+        }
+
+        &__input {
+            font-size: 15px;
+        }
+    }
 }

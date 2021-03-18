@@ -654,6 +654,11 @@ ul {
 .galery__slide {
   flex-shrink: 0;
 }
+@media (max-width: 700px) {
+  .galery__title {
+    font-size: 18px;
+  }
+}
 
 .newsletter {
   width: 100%;
@@ -701,6 +706,17 @@ ul {
 }
 .newsletter__suscribeBtn {
   margin-left: 3%;
+}
+@media (max-width: 700px) {
+  .newsletter {
+    padding-left: 5%;
+  }
+  .newsletter__question {
+    display: inherit;
+  }
+  .newsletter__input {
+    font-size: 15px;
+  }
 }
 
 .footer {
