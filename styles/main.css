@@ -475,7 +475,7 @@ ul {
   }
   .description__pdfText {
     order: 1;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-right: 5%;
     padding: 0;
   }
@@ -488,7 +488,7 @@ ul {
     width: 70%;
     order: 1;
     margin-left: 15%;
-    margin-top: 40%;
+    margin-top: 30%;
   }
 }
 
@@ -538,6 +538,11 @@ ul {
 .modal__mockup {
   position: absolute;
   z-index: 1;
+}
+@media (max-width: 700px) {
+  .modal {
+    right: 10%;
+  }
 }
 
 .fichaTecnica {
@@ -590,6 +595,30 @@ ul {
 .fichaTecnica td {
   padding: 2%;
   width: 200px;
+}
+@media (max-width: 700px) {
+  .fichaTecnica {
+    margin-top: 6%;
+  }
+  .fichaTecnica__title {
+    font-size: 18px;
+  }
+  .fichaTecnica__tablas {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fichaTecnica__middle {
+    margin-top: 0%;
+    height: 2px;
+    width: 100%;
+    background-color: #5E0019;
+  }
+  .fichaTecnica__tabla1 {
+    margin-left: 5%;
+  }
+  .fichaTecnica__tabla2 {
+    margin-left: 9%;
+  }
 }
 
 .galery {
@@ -727,4 +756,9 @@ ul {
   margin-bottom: 1%;
   border-radius: 15%;
   border-color: #5E0019;
+}
+@media (max-width: 700px) {
+  .btninteract {
+    margin-left: 40%;
+  }
 }/*# sourceMappingURL=main.css.map */

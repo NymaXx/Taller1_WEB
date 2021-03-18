@@ -7,4 +7,8 @@
     margin-bottom: 1%;
     border-radius: 15%;
     border-color: #5E0019;
+
+    @media (max-width: 700px) { 
+        margin-left: 40%;
+    }
 }

@@ -48,13 +48,17 @@
 
     &__slide {
         margin-top: 1%;
-       
         position: relative;
     }
 
     &__mockup {
         position: absolute;
         z-index: 1;
+    }
+
+    @media (max-width: 700px) { 
+        right: 10%;
+
     }
 
 }
