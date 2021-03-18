@@ -728,6 +728,7 @@ ul {
 }
 .footer__logo {
   display: flex;
+  width: 100%;
   justify-content: center;
 }
 .footer__phrase {
@@ -758,9 +759,42 @@ ul {
   margin-right: 5%;
 }
 .footer__icons {
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
+}
+.footer__linksMOVIL {
+  display: none;
+}
+@media (max-width: 700px) {
+  .footer__logoIMG {
+    width: 50%;
+  }
+  .footer__phrase {
+    font-size: 14px;
+  }
+  .footer__links {
+    display: none;
+  }
+  .footer__linksMOVIL {
+    display: flex;
+    margin-top: 5%;
+  }
+  .footer__linksMOVIL1 {
+    list-style-type: none;
+    margin-left: 25%;
+    text-align: center;
+  }
+  .footer__linksMOVIL2 {
+    margin-top: 5px;
+  }
+  .footer__icons {
+    margin-top: 5%;
+  }
+  .footer__icon {
+    width: 90%;
+  }
 }
 
 .btninteract {

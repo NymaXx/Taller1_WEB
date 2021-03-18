@@ -7,6 +7,7 @@
 
     &__logo {
         display: flex;
+        width: 100%;
         justify-content: center;
     }
 
@@ -44,8 +45,61 @@
         }
 
     &__icons {
+        width: 100%;
         display: flex;
         justify-content: center;
         margin-bottom: 5%;
+        }
+
+    &__linksMOVIL {
+        display: none;
+    }
+
+        @media (max-width: 700px) { 
+
+            &__logoIMG {
+                width: 50%;
+            }
+
+            &__phrase {
+                font-size: 14px;
+            }
+
+            &__links{
+                display: none;
+
+            }
+
+            &__linksMOVIL {
+                display: flex;
+                margin-top: 5%;
+                
+            }
+
+            &__linksMOVIL1 {
+                list-style-type: none ;
+                margin-left: 25%;
+                text-align: center;
+               
+            }
+
+            &__linksMOVIL2 {
+               margin-top: 5px;
+            }
+
+            &__icons{
+                margin-top: 5%;
+            }
+
+            &__icon{
+                width:90%;
+            }
+
+
+
+
+
+
+
         }
 }
