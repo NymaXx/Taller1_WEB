@@ -2,9 +2,15 @@
 /*Font light-bold*/
 @import url("https://fonts.googleapis.com/css2?family=Martel:wght@300;400;700;800&display=swap");
 /*light-regular-bold-extraBold*/
+html {
+  overflow-x: hidden;
+  margin: 0;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 body {
@@ -21,7 +27,6 @@ ul {
 
 .header {
   display: flex;
-  position: fixed;
   margin: 0;
   z-index: 4;
   width: 100%;
@@ -185,6 +190,11 @@ ul {
     margin-left: 9%;
   }
   .header__menuResponsive3 {
+    display: inline;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .header__menuResponsiveH {
     display: inline;
     margin-left: 6%;
     margin-right: 6%;
@@ -811,4 +821,36 @@ ul {
   .btninteract {
     margin-left: 40%;
   }
+}
+
+.menuModal {
+  display: none;
+  z-index: 7;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+.menuModal__backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.menuModal__content {
+  display: flex;
+  background-color: #A1002A;
+  color: #F1DDD2;
+  width: 50%;
+}
+.menuModal__list {
+  list-style-type: none;
+  padding: 15px;
+  justify-content: center;
+  margin-left: 25%;
+}
+.menuModal__list2 {
+  font-family: "Martel";
+  margin-top: 20%;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

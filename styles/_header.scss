@@ -1,6 +1,6 @@
 .header{
     display: flex;
-    position: fixed;
+    //position: fixed;
     margin: 0;
     z-index: 4;
     width: 100%;
@@ -156,6 +156,7 @@
 
         @media (max-width: 700px) {  
 
+
             &__menu {
                 justify-content: center;
             }
@@ -163,6 +164,8 @@
               display: none;
             
             }
+
+            
             
             &__searchBar {
                display: none;
@@ -201,6 +204,12 @@
                 margin-left: 6%;
                 margin-right: 6%;
                
+            }
+
+            &__menuResponsiveH {
+                display: inline;
+                margin-left: 6%;
+                margin-right: 6%;
             }
 
 
