@@ -60,7 +60,6 @@
     &__carrousel {
         display: flex;
         width: 32%;
-        //margin-left: 7%;
         overflow: hidden;
         border-radius: 10%;
         
@@ -78,7 +77,6 @@
 
     &__slide {
         margin-top: 1%;
-       
         position: relative;
     }
 
@@ -87,7 +85,91 @@
         z-index: 1;
     }
 
-  
+    &__movilInteract {
+        display: none;
+    }
+
+    @media (max-width: 700px) { 
+        .description{
+            background-size: auto;
+        }
+
+
+        &__cards {
+            flex-wrap: wrap;
+            
+           
+        }
+
+        &__cardText {
+            padding: 0;
+            margin-left: 5%;
+            margin-top: 39%;
+        }
+
+        &__cardText2{
+            background-color: rgb(255, 234, 239);
+            color: #5E0019;
+            
+        }
+
+        &__cardText3 {
+            background-color: rgb(255, 234, 239);
+            color: #5E0019;
+            margin-top: 0;
+        }
+
+
+
+        &__pdf {
+            flex-wrap: wrap;
+        }
+
+        &__pdfText2 {
+            background-color: rgb(255, 234, 239);
+            color: #5E0019;
+        }
+
+        &__pdfText3 {
+            background-color: rgb(255, 234, 239);
+            color: #5E0019;
+        }
+
+        &__carrousel{
+            display: none;
+        }
+
+        &__movilInteract{
+            display: flex;
+        }
+
+        &__pdfText {
+            order: 1;
+            margin-top: 15%;
+            margin-right: 5%;
+            padding: 0;
+
+        }
+
+        &__cardImg {
+            height: 193px;
+            width: 215px;
+            margin-top: 40%;
+        }
+
+        &__interactImg{
+            width: 70%;
+            order: 1;
+            margin-left: 15%;
+            margin-top: 40%;
+        }
+
+        
+
+
+
+
+    }
 
     
 
