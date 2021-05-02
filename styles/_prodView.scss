@@ -103,9 +103,7 @@
         font-family: 'Montserrat';
     }
 
-    &__editorial{
-        
-    }
+  
 
     &__presentacion{
         margin-left: 5%;
@@ -179,6 +177,104 @@
 
    &__espList2{
        margin-left: 8%;
+       
+   }
+   
+   &__textExpand{
+       margin-right: 10%;
+       margin-bottom: 5%;
    }
 
+
+   //SECCION DE RESENA
+}
+
+.resena{
+    margin-left: 4%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    
+
+    &__heead{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title{
+        font-family: 'Martel';
+        font-size: 27px;
+        font-weight: 800;
+    }
+
+    &__add{
+        font-family: 'Montserrat';
+        font-size: 20px;
+        margin-right: 26%;
+    }
+
+    &__addBtn{
+        border-radius: 15px;
+        border-color: #ECC9C7;
+        background-color: #FAF5F5;
+    }
+
+    &__Separador2{
+        background-color: #A1002A60;
+        height: 4px;
+        width: 94%;
+        margin-bottom: 2%;
+    }
+
+    &__resenaPrueba{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat';
+    }
+
+    &__textt{
+        margin-bottom: 1%;
+    }
+    &__textt2{
+        margin-top: 1%;
+    }
+}
+
+.interest{
+    display: flex;
+    flex-direction: column;
+    background-color: #ECC9C7;
+
+    &__title{
+        width: 100%;
+        background-color: #5E0019;
+        font-family: "Martel";
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        color: #FAF5F5;
+        padding-bottom: 0.8%;
+        padding-top: 0.8%;
+        
+    }
+
+    &__carrousel{
+        display: flex;
+        width: 90%;
+        margin-left: 5%;
+        overflow: hidden;
+    }
+
+    &__slyder {
+        display: flex;
+        margin: 4%;
+        justify-content: center;
+        align-items:center;
+        transition: transform 700ms ease-in-out;
+    }
+
+    &__slide {
+        flex-shrink: 0;
+        margin-left: 2%;
+    }
 }
