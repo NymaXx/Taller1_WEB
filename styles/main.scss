@@ -16,7 +16,7 @@ main{
     width: 100%;
 }
 body{
-    background-color: rgb(255, 234, 239);
+    background-color: #FAF5F5;
     margin: 0;
 }
 ul {
@@ -39,6 +39,9 @@ ul {
 @import 'footer';
 @import 'btninteract';
 @import 'menuModal';
+@import 'store';
+@import 'login';
+@import 'prodView';
 
 
 
