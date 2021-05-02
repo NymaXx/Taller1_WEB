@@ -1301,4 +1301,269 @@ ul {
 .interest__slide {
   flex-shrink: 0;
   margin-left: 2%;
+}
+
+.gnral {
+  display: flex;
+  flex-direction: row;
+}
+
+.payContainer {
+  display: flex;
+  margin-top: 220px;
+  flex-direction: column;
+  width: 60%;
+  margin-right: 2%;
+  font-family: "Montserrat";
+}
+.payContainer__title {
+  width: 93%;
+  background-color: #5E0019;
+  font-family: "Martel";
+  font-size: 22px;
+  font-weight: 600;
+  padding-left: 7%;
+  color: #FAF5F5;
+  padding-bottom: 0.8%;
+  padding-top: 0.8%;
+  margin-bottom: 2%;
+}
+.payContainer__label {
+  font-size: 12px;
+}
+.payContainer__input {
+  background-color: #5E001900;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-color: #5E001920;
+  outline: none;
+  font-size: 20px;
+  color: #292929;
+  font-weight: 200;
+}
+.payContainer__personal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.payContainer__name {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-left: 7%;
+  padding: 3%;
+  width: 38.5%;
+}
+.payContainer__lastName {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 2%;
+  padding: 3%;
+  width: 38.5%;
+}
+.payContainer__documentType {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 3%;
+  margin-right: 2%;
+  margin-left: 7%;
+  margin-bottom: 5%;
+  padding: 3%;
+  width: 38.5%;
+}
+.payContainer__documentNumber {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  padding: 3%;
+  width: 38.5%;
+}
+.payContainer__direccionn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.payContainer__pais {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-left: 7%;
+  padding: 3%;
+  width: 38.5%;
+}
+.payContainer__depto {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 2%;
+  padding: 3%;
+  width: 38.5%;
+}
+.payContainer__city {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 3%;
+  margin-right: 2%;
+  margin-left: 7%;
+  margin-bottom: 5%;
+  padding: 3%;
+  width: 38.5%;
+}
+.payContainer__direccion {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  padding: 3%;
+  width: 38.5%;
+}
+.payContainer__paggo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.payContainer__tarjeta {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-left: 7%;
+  padding: 3%;
+  width: 38.5%;
+}
+.payContainer__numtarjeta {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 2%;
+  padding: 3%;
+  width: 38.5%;
+}
+.payContainer__titularName {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 3%;
+  padding: 3%;
+  width: 38.5%;
+}
+.payContainer__fechatarjeta {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 3%;
+  margin-right: 2%;
+  margin-left: 7%;
+  padding: 3%;
+  width: 38.5%;
+}
+.payContainer__cvv {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-right: 2%;
+  margin-left: 7%;
+  padding: 3%;
+  width: 38.5%;
+  margin-top: 3%;
+}
+
+.orden {
+  margin-top: 220px;
+  width: 40%;
+  margin-right: 3%;
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+}
+.orden__containtergnral {
+  background-color: #ECC9C7;
+  border-radius: 20px;
+  padding: 4%;
+}
+.orden__title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.orden__separaddor {
+  background-color: #A1002A60;
+  height: 4px;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.orden table {
+  font-size: 15px;
+}
+.orden__TOTAL {
+  font-size: 24px;
+}
+.orden td {
+  width: 400px;
+  height: 30px;
+}
+.orden__comprarBtn {
+  background-color: #5E0019;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 18px;
+  color: #FAF5F5;
+  border-radius: 10px;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 3%;
+  height: 65px;
+  margin-bottom: 10%;
+}
+.orden__resTitle {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+.orden__separador {
+  background-color: #A1002A60;
+  height: 4px;
+  width: 100%;
+  margin-bottom: 7%;
+}
+.orden__descripcion {
+  display: flex;
+  flex-direction: row;
+}
+.orden__imgLib {
+  margin-right: 8%;
+}
+.orden__libroTitle {
+  font-family: "Martel";
+  font-size: 20px;
+  font-weight: 800;
+}
+.orden__datos {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+.orden__totalPrice {
+  font-family: "Montserrat";
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 24%;
+}
+
+.separador {
+  background-color: #A1002A60;
+  height: 4px;
+  width: 100%;
+  margin-bottom: 4%;
+  margin-top: 7%;
+}
+
+.mensaje {
+  font-family: "Montserrat";
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+.mensaje__texto {
+  width: 50%;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
