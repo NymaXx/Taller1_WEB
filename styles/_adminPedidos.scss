@@ -1,0 +1,248 @@
+.GnralTitle{
+    display: flex;
+    font-family: 'Martel';
+    font-size: 25px;
+    font-weight: 800;
+    color: #5E0019;
+    margin-top: 200px;
+    margin-left: 40%;
+    margin-bottom: 3%;
+}
+.AdminContainer{
+    display: flex;
+    flex-direction: row;
+
+    &__res1{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-right: 2%;
+        font-family: 'Montserrat';
+        margin-bottom: 5%;
+    }
+    
+    
+    &__title{
+        width: 93%;
+        background-color: #5E0019;
+        font-family: "Martel";
+        font-size: 22px;
+        font-weight: 600;
+        padding-left: 7%;
+        color: #FAF5F5;
+        padding-bottom: 0.8%;
+        padding-top: 0.8%;
+        margin-bottom: 2%;
+    }
+
+    &__label{
+        font-size: 12px;
+    }
+
+    &__input{
+        background-color: #5E001900 ;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-color: #5E001920;
+        outline: none;
+        font-size: 20px;
+        color: #292929;
+        font-weight: 200;
+
+    }
+
+
+    //PAGO
+
+    &__revision{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__nombreC{
+        border-color: #ECC9C7;
+        border-style: solid;
+        margin-top: 2%;
+        margin-right: 2%;
+        margin-left: 7%;
+        padding: 3%;
+        width: 38.5%;
+    }
+
+    &__apellidoC{
+        border-color: #ECC9C7;
+        border-style: solid;
+        margin-top: 2%;
+        padding: 3%;
+        width: 38.5%;
+    }
+
+    &__direccionC{
+        border-color: #ECC9C7;
+        border-style: solid;
+        margin-top: 3%;
+        padding: 3%;
+        width: 38.5%;
+    }
+
+    &__ciudadC{
+        border-color: #ECC9C7;
+        border-style: solid;
+        margin-top: 3%;
+        margin-right: 2%;
+        margin-left: 7%;
+        padding: 3%;
+        width: 38.5%;
+    }
+
+    &__tipoTarjetaC{
+        border-color: #ECC9C7;
+        border-style: solid;
+        margin-right: 2%;
+        margin-left: 7%;
+        padding: 3%;
+        width: 38.5%;
+        margin-top: 3%;
+    }
+
+    
+    &__numTarjetaC{
+        border-color: #ECC9C7;
+        border-style: solid;
+        margin-top: 3%;
+        padding: 3%;
+        width: 38.5%;
+    }
+
+    &__revisionBtn{
+        background-color:#5E0019;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 18px;
+        color: #FAF5F5;
+        border-radius: 10px;
+        width: 30%;
+        margin-left: 2.5%;
+        height: 65px;
+        margin-bottom: 10%;
+    }
+
+}
+
+.pedido{
+    margin-top: 2%;
+    width: 56%;
+    margin-right: 3%;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    margin-bottom: 3%;
+
+    &__containtergnral{
+        background-color: #ECC9C7;
+        border-radius: 20px;
+        padding: 4%;
+        
+    }
+
+    &__title{
+        
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    &__separaddor{
+        background-color: #A1002A60;
+        height: 4px;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    table{
+        font-size: 15px;
+    }
+
+    &__TOTAL{
+        font-size: 24px;
+    }
+
+    td{
+        width:400px;
+        height: 30px;
+    }
+
+    &__comprarBtn{
+        background-color:#5E0019;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 18px;
+        color: #FAF5F5;
+        border-radius: 10px;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 3%;
+        height: 65px;
+        margin-bottom: 10%;
+        
+       
+    }
+
+    &__resTitle{
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 2%;
+    }
+
+    &__separador{
+        background-color: #A1002A60;
+        height: 4px;
+        width: 100%;
+        margin-bottom: 7%;
+
+    }
+
+    &__descripcion{
+        display: flex;
+        flex-direction: row;
+    }
+    &__imgLib{
+        margin-right: 8%;
+    }
+
+    &__libroTitle{
+        font-family: 'Martel';
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    &__datos{
+        font-family: 'Montserrat';
+        font-size: 14px;
+    }
+
+    &__totalPrice{
+        font-family: 'Montserrat';
+        font-size: 21px;
+        font-weight: 700;
+        margin-top: 10%;
+    }
+
+    &__enviadoCheckbox{
+        font-family: 'Montserrat';
+        font-size: 16px;
+        color: #5E0019;
+        font-weight: 800;
+        margin-top: 10%;
+    }
+}
+
+.separadorG{
+    background-color: #A1002A60;
+    height: 4px;
+    width: 100%;
+    margin-bottom: 7%;
+    margin-top: 7%;
+}

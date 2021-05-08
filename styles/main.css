@@ -1847,4 +1847,216 @@ ul {
   justify-self: center;
   height: 40px;
   align-self: center;
+}
+
+.GnralTitle {
+  display: flex;
+  font-family: "Martel";
+  font-size: 25px;
+  font-weight: 800;
+  color: #5E0019;
+  margin-top: 200px;
+  margin-left: 40%;
+  margin-bottom: 3%;
+}
+
+.AdminContainer {
+  display: flex;
+  flex-direction: row;
+}
+.AdminContainer__res1 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-right: 2%;
+  font-family: "Montserrat";
+  margin-bottom: 5%;
+}
+.AdminContainer__title {
+  width: 93%;
+  background-color: #5E0019;
+  font-family: "Martel";
+  font-size: 22px;
+  font-weight: 600;
+  padding-left: 7%;
+  color: #FAF5F5;
+  padding-bottom: 0.8%;
+  padding-top: 0.8%;
+  margin-bottom: 2%;
+}
+.AdminContainer__label {
+  font-size: 12px;
+}
+.AdminContainer__input {
+  background-color: #5E001900;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-color: #5E001920;
+  outline: none;
+  font-size: 20px;
+  color: #292929;
+  font-weight: 200;
+}
+.AdminContainer__revision {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.AdminContainer__nombreC {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-left: 7%;
+  padding: 3%;
+  width: 38.5%;
+}
+.AdminContainer__apellidoC {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 2%;
+  padding: 3%;
+  width: 38.5%;
+}
+.AdminContainer__direccionC {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 3%;
+  padding: 3%;
+  width: 38.5%;
+}
+.AdminContainer__ciudadC {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 3%;
+  margin-right: 2%;
+  margin-left: 7%;
+  padding: 3%;
+  width: 38.5%;
+}
+.AdminContainer__tipoTarjetaC {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-right: 2%;
+  margin-left: 7%;
+  padding: 3%;
+  width: 38.5%;
+  margin-top: 3%;
+}
+.AdminContainer__numTarjetaC {
+  border-color: #ECC9C7;
+  border-style: solid;
+  margin-top: 3%;
+  padding: 3%;
+  width: 38.5%;
+}
+.AdminContainer__revisionBtn {
+  background-color: #5E0019;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 18px;
+  color: #FAF5F5;
+  border-radius: 10px;
+  width: 30%;
+  margin-left: 2.5%;
+  height: 65px;
+  margin-bottom: 10%;
+}
+
+.pedido {
+  margin-top: 2%;
+  width: 56%;
+  margin-right: 3%;
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  margin-left: 4%;
+  margin-bottom: 3%;
+}
+.pedido__containtergnral {
+  background-color: #ECC9C7;
+  border-radius: 20px;
+  padding: 4%;
+}
+.pedido__title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.pedido__separaddor {
+  background-color: #A1002A60;
+  height: 4px;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.pedido table {
+  font-size: 15px;
+}
+.pedido__TOTAL {
+  font-size: 24px;
+}
+.pedido td {
+  width: 400px;
+  height: 30px;
+}
+.pedido__comprarBtn {
+  background-color: #5E0019;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 18px;
+  color: #FAF5F5;
+  border-radius: 10px;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 3%;
+  height: 65px;
+  margin-bottom: 10%;
+}
+.pedido__resTitle {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+.pedido__separador {
+  background-color: #A1002A60;
+  height: 4px;
+  width: 100%;
+  margin-bottom: 7%;
+}
+.pedido__descripcion {
+  display: flex;
+  flex-direction: row;
+}
+.pedido__imgLib {
+  margin-right: 8%;
+}
+.pedido__libroTitle {
+  font-family: "Martel";
+  font-size: 20px;
+  font-weight: 800;
+}
+.pedido__datos {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+.pedido__totalPrice {
+  font-family: "Montserrat";
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 10%;
+}
+.pedido__enviadoCheckbox {
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: #5E0019;
+  font-weight: 800;
+  margin-top: 10%;
+}
+
+.separadorG {
+  background-color: #A1002A60;
+  height: 4px;
+  width: 100%;
+  margin-bottom: 7%;
+  margin-top: 7%;
 }/*# sourceMappingURL=main.css.map */
