@@ -1,0 +1,147 @@
+.gnral{
+    display: flex;
+
+   
+}
+
+
+.cartContainer{
+    margin-top: 220px;
+    width: 80%;
+    
+    &__title{
+        width: 93%;
+        background-color: #5E0019;
+        font-family: "Martel";
+        font-size: 22px;
+        font-weight: 600;
+        padding-left: 7%;
+        color: #FAF5F5;
+        padding-bottom: 0.8%;
+        padding-top: 0.8%;
+        margin-bottom: 2%;
+    }
+
+    &__items{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__item1{
+        margin-left: 8%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__description{
+        margin-left: 5%;
+    }
+
+    &__desTitle1{
+        font-family: 'Martel';
+        font-size: 20px;
+        font-weight: 800;
+        width: 280px;
+        margin: 0;
+    }
+
+    &__desTitle{
+        font-family: 'Martel';
+        font-size: 20px;
+        font-weight: 800;
+        width: 150px;
+    }
+
+    &__precio{
+        font-family: 'Montserrat';
+        font-size: 16px;
+    }
+
+
+    &__text{
+        font-family: 'Montserrat';
+        font-size: 14px;
+    }
+
+    &__Btns{
+        display: flex;
+        margin-top: 10%;
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 25px;
+        height: 55px;
+        margin-bottom: 7%;
+    }
+
+    &__restar{
+        background-color: #ECC9C7;
+        border-color: #ECC9C7;
+        color:#3d3c3c;
+        font-family: 'Martel';
+        font-size: 35px;
+        font-weight: 800;
+        width: 50px;
+    }
+
+    &__sumar{
+        background-color: #ECC9C7;
+        border-color: #ECC9C7;
+        color:#3d3c3c;
+        font-family: 'Martel';
+        font-size: 35px;
+        font-weight: 800;
+        width: 50px;
+    }
+
+    &__cantidad{
+        font-family: 'Montserrat';
+        font-size: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+        align-self: center;
+        color:#3d3c3c;
+    }
+
+    &__deleteItemBtn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-color: #FAF5F5;
+        background-color: #FAF5F5;
+        font-family: 'Montserrat';
+        font-size: 16px;
+    }
+
+    &__imgb{
+        margin-right: 8px;
+    }
+
+   
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 5%;
+
+    &__separador{
+        background-color: #A1002A60;
+        height: 4px;
+        width: 90%;
+        margin-bottom: 5%;
+       align-self: center;
+        
+    }
+
+    &__textDespachos{
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-weight: 400;
+        width: 500px;
+        text-align: center;
+        align-self: center;
+        
+    }
+
+}

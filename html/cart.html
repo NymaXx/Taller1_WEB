@@ -85,8 +85,11 @@
         </section>
 
 
+<!--AQUI TERMINA EL HEADER-->
 
+    <div class="gnral">
         
+    
         <section class="cartContainer">
             <div class="cartContainer__title"> 
                 Tu carrito de compras:
@@ -96,14 +99,18 @@
                     <img src="../imgStore\milveceshastasiempre.jpg" alt="">
 
                     <div class="cartContainer__description">
-                        <p class="cartContainer__desTitle">MIL VECES HASTA SIEMPRE</p>
-                        <small>Autor: Jhon Green
+                        <p class="cartContainer__desTitle1">MIL VECES HASTA SIEMPRE</p>
+                        <small class="cartContainer__text">Autor: Jhon Green
                         <br>   Tipo: Libro
                         <br>   ISBN: 9789585643017
                         </small>
-                        <button class="cartContainer__restar"><strong>-</strong></button>
-                        <p class="cartContainer__cantidad"> 0 </p>
-                        <button class="cartContainer__sumar"><strong>+</strong></button>
+
+                        <div class="cartContainer__Btns">
+                            <button class="cartContainer__restar"><strong>-</strong></button>
+                            <div class="cartContainer__cantidad"> 0 </div>
+                            <button class="cartContainer__sumar"><strong>+</strong></button>
+                        </div>
+                        <button class="cartContainer__deleteItemBtn"> <img class="cartContainer__imgb" src="../imgStore\deleteICON.png" alt="">Eliminar este producto</button>
                     </div>
 
                     <div class="cartContainer__valorU">
@@ -113,34 +120,66 @@
                     </div>
 
                     <div class="cartContainer__valorT">
-                        <p class="cartContainer__desTitle">Valor U</p>
+                        <p class="cartContainer__desTitle">Total</p>
                         <p class="cartContainer__precio"> $ 32.000</p>
 
                     </div>
 
-                    <button class="cartContainer__deleteItemBtn"> <img src="../imgStore\deleteICON.png" alt=""> Eliminar este producto</button>
+                    
 
                 </div>
 
             </div>
 
-            <div class="cartContainer__separador"> separador rosa </div>
-
-            <div class="cartContainer__textDespachos">
-                <em>Los tiempos de despacho pueden variar durante la 
-                    emergencia sanitaria.  </em> 
-            </div>
         </section>
 
 
+        <section class="orden">
 
+            <div class="orden__containtergnral">
+                <div class="orden__title">
+                    Tu Orden
+                </div>
 
+                <div class="orden__separaddor"> </div>
+
+                <table class="orden__table">
+                    <tr>
+                    <td>Subtotal</td>
+                    <td >$ 32.000</td>
+                    </tr>
+                    <tr>
+                    <td>Envio</td>
+                    <td >$ 11.000</td>
+                    </tr>
+                    <tr class="orden__TOTAL">
+                    <td>Total</td>
+                    <td >$ 43.000</td>
+                    </tr>
+                    <tr>
+                </table>
+            </div>
+
+            <button class="orden__comprarBtn"> CONTINUAR CON LA COMPRA </button>
+
+        </section>
+    </div>
+
+    <section class="info">
+        <div class="info__separador">  </div>
+
+        <div class="info__textDespachos">
+            <em>Los tiempos de despacho pueden variar durante la 
+                emergencia sanitaria.  </em> 
+        </div>
+    </section>
 
 
 
 
         
 
+<!--AQUI EMPIEZA EL FOOTER-->
 
 
         <section class="footer">
