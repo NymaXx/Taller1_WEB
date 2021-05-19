@@ -2059,4 +2059,63 @@ ul {
   width: 100%;
   margin-bottom: 7%;
   margin-top: 7%;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.basicProd {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+.basicProd__info {
+  margin-top: 4%;
+}
+.basicProd__title {
+  font-family: "Martel";
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.2em;
+}
+.basicProd__autor {
+  margin-top: 5px;
+  color: #292929;
+}
+.basicProd__precio {
+  color: #292929;
+}
+.basicProd__category {
+  color: #292929;
+}
+.basicProd__idioma {
+  color: #292929;
+}
+.basicProd__buttons {
+  display: flex;
+  margin-top: 5px;
+  flex-direction: row;
+}
+.basicProd__add {
+  font-family: "Montserrat";
+  background-color: #5E0019;
+  border-color: #5E0019;
+  color: #FAF5F5;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 2px;
+}
+.basicProd__ver {
+  font-family: "Montserrat";
+  background-color: #5E0019;
+  border-color: #5E0019;
+  color: #FAF5F5;
+  height: 30px;
+  border-radius: 5px;
 }/*# sourceMappingURL=main.css.map */
