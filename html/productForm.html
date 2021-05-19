@@ -103,26 +103,39 @@
 
         <label >Categoria:
             <select name="categoria">
-                <option> Juvenil </option>
-                <option> Policíaca </option>
-                <option> Terror </option>
-                <option> Fantasía </option>
-                <option> Autoayuda</option>
+                <option value="Juvenil"> Juvenil </option>
+                <option value="Policíaca"> Policíaca </option>
+                <option value="Terror"> Terror </option>
+                <option value="Fantasía"> Fantasía </option>
+                <option value="Autoayuda"> Autoayuda</option>
             </select> 
         </label>
 
         <label>Idioma: <br>
             <select name="idioma">
-                <option> Español </option>
-                <option> Inglés </option>
+                <option value="Español"> Español </option>
+                <option value="Inglés"> Inglés </option>
             </select> 
         </label>
-      
+
+        <label>Formato: <br>
+            <select name="formato">
+                <option value="Libro"> Libro </option>
+                <option value="AudioLibro"> AudioLibro </option>
+                <option value="eBook"> eBook </option>
+            </select> 
+        </label>
 
         
+        <label>
+            Descripción: <br>
+            <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+        </label>
+        
+        <input type="file">
 
 
-        <button class="sendButton" type="submit">enviar</button>
+        <button class="sendButton" type="submit">Enviar</button>
 
     </form>
 

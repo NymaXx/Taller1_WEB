@@ -23,17 +23,20 @@ productForm.addEventListener('submit', (event) => {
         precio: parseInt(productForm.precio.value),
         categoria: productForm.categoria.value,
         idioma: productForm.idioma.value,
+        descripcion: productForm.descripcion.value ,
+        formato: productForm.formato.value,
+        
     };
 
 
     db.collection("products").add(product)
-    .then((docRef) => {
-        console.log("Document written with ID: ", docRef.id);
+    .then((docRef)=>{
+        alert('Se anadio con exito el nuevo producto con el ID' + docRef.id);
     })
-    .catch((error) => {
-        console.error("Error adding document: ", error);
+    .catch((error)=>{
+        alert('No se ha podido anadir el nuevo producto, intentalo de nuevo' + error);
     });
-
+    
 
 
 } );

@@ -2161,4 +2161,8 @@ select {
   border-radius: 10px;
   width: 40%;
   margin-left: 20%;
+}
+
+textarea {
+  width: 80%;
 }/*# sourceMappingURL=main.css.map */
