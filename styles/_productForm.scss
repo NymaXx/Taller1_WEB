@@ -1,0 +1,41 @@
+.productForm{
+    margin-top: 220px;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 35%;
+}
+
+input{
+    font-family: 'Montserrat';
+    height: 20px;
+    border-color: #ECC9C7;
+    border-style: solid;
+    margin-right: 7%;
+    width: 80%;
+    margin-top: 1%;
+}
+
+label{
+    font-family: 'Martel';
+    font-weight: 800;
+    margin-top: 2%;
+}
+
+select{
+    font-family: 'Montserrat';
+    width: 80%;
+    border-color: #ECC9C7;
+}
+
+.sendButton{
+    margin-top: 2%;
+    background-color:#5E0019;
+    font-family: 'Martel';
+    font-size: 15px;
+    color: #FAF5F5;
+    border-radius: 10px;
+    width: 40%;
+    margin-left: 20%;
+}
