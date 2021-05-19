@@ -10,8 +10,26 @@ const firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
 
 const db = firebase.firestore();
+const storage = firebase.storage();
 
 const productForm = document.querySelector('.productForm');
+const productImg = document.querySelector('.productForm__img');
+
+
+
+
+productForm.image.addEventListener('change', ()=>{
+    const reader = new FileReader();
+
+    reader.onload = (e)=>{
+        productImg.setAttribute('src', e.target.result);
+    }
+    reader.readAsDataURL(productForm.image.files[0]);
+});
+
+
+
+
 
 productForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -28,6 +46,27 @@ productForm.addEventListener('submit', (event) => {
         
     };
 
+    let error = '';
+    if(!(productForm.nombre.value ||productForm.autor.value || productForm.precio.value 
+        || productForm.categoria.value || productForm.idioma.value || productForm.formato.value )){
+            error = 'debe llenar todos los campos';
+            alert(error);
+        return;
+    }
+    
+
+    // Create a root reference
+var storageRef = firebase.storage().ref();
+
+// Create a reference to 'mountains.jpg'
+var mountainsRef = storageRef.child('mountains.jpg');
+
+// Create a reference to 'images/mountains.jpg'
+var mountainImagesRef = storageRef.child('images/mountains.jpg');
+
+
+    console.log(productForm.image.files);
+
 
     db.collection("products").add(product)
     .then((docRef)=>{
@@ -37,6 +76,8 @@ productForm.addEventListener('submit', (event) => {
         alert('No se ha podido anadir el nuevo producto, intentalo de nuevo' + error);
     });
     
+return;
+
 
 
 } );
