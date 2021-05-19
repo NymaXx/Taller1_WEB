@@ -43,6 +43,13 @@ productForm.addEventListener('submit', (event) => {
         idioma: productForm.idioma.value,
         descripcion: productForm.descripcion.value ,
         formato: productForm.formato.value,
+        editorial: productForm.editorial.value,
+        presentacion: productForm.presentacion.value,
+        volumen: productForm.volumen.value,
+        dimensiones: productForm.dimensiones.value,
+        capitulos: productForm.capitulos.value,
+        paginas: productForm.numpaginas.value,
+        peso: productForm.peso.value,
         
     };
 
@@ -53,33 +60,38 @@ productForm.addEventListener('submit', (event) => {
             alert(error);
         return;
     }
-    
+
 
     // Create a root reference
-var storageRef = firebase.storage().ref();
+    const file = productForm.image.files[0];
+    var storageRef = firebase.storage().ref();
+    var fileRef = storageRef.child(`storeImages/${productForm.formato.value}/${file.name}`);
+   
+    //esperar a subir imagen
+    fileRef.put(file).then((snapshot) => {
 
-// Create a reference to 'mountains.jpg'
-var mountainsRef = storageRef.child('mountains.jpg');
+    //espera a obtener la url de  descarga
+        snapshot.ref.getDownloadURL().then((downloadURL) => {
+            console.log(downloadURL);
+            product.imageUrl = downloadURL;
+            product.imageRef = snapshot.ref.fullPath;
 
-// Create a reference to 'images/mountains.jpg'
-var mountainImagesRef = storageRef.child('images/mountains.jpg');
+            //espera a subir la info al firestore
+            db.collection("products").add(product)
+            .then((docRef)=>{
+                alert('Se anadio con exito el nuevo producto con el ID' + docRef.id);
+            })
+            .catch((error)=>{
+                alert('No se ha podido anadir el nuevo producto, intentalo de nuevo' + error);
+            });
+            console.log('File available at', downloadURL);
+        });
 
 
-    console.log(productForm.image.files);
-
-
-    db.collection("products").add(product)
-    .then((docRef)=>{
-        alert('Se anadio con exito el nuevo producto con el ID' + docRef.id);
-    })
-    .catch((error)=>{
-        alert('No se ha podido anadir el nuevo producto, intentalo de nuevo' + error);
+        console.log(snapshot);
+        console.log('Uploaded a blob or file!');
     });
-    
-return;
 
-
-
-} );
+});
 
 
