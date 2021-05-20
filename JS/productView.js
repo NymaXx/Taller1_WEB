@@ -16,6 +16,13 @@ const prodPresentacion = document.querySelector('.productV__detailDataPresentaci
 const prodAutDet = document.querySelector('.productV__detailDataAutor');
 const prodCategoria = document.querySelector('.productV__detailDataCategoria');
 const prodFormato = document.querySelector('.productV__detailDataFormato');
+const prodDescrip = document.querySelector('.productV__textExpand');
+const espEdicion = document.querySelector('.productV__espListEdic');
+const prodIdioma = document.querySelector('.productV__espListIdiom');
+const numPag = document.querySelector('.productV__espListNumPag');
+const numCap = document.querySelector('.productV__espListNumCap');
+const prodDim = document.querySelector('.productV__espListDim');
+const prodPeso = document.querySelector('.productV__espListPeso');
 
 
 db.collection('products')
@@ -40,6 +47,13 @@ db.collection('products')
         prodAutDet.innerText = data.autor;
         prodCategoria.innerText = data.categoria;
         prodFormato.innerText = data.formato;
+        prodDescrip.innerText = data.descripcion;
+        espEdicion.innerHTML = `<strong>Volumen:</strong> ${data.volumen}`;
+        prodIdioma.innerHTML = `<strong>Idioma:</strong> ${data.idioma} `;
+        numPag.innerHTML = `<strong>Número de páginas:</strong> ${data.paginas} `;
+        numCap.innerHTML = `<strong>Número de  capitulos:</strong> ${data.capitulos} `;
+        prodDim.innerHTML = `<strong>Dimensiones:</strong> ${data.dimensiones} `;
+        prodPeso.innerHTML = `<strong>Peso:</strong> ${data.peso} `;
 
 
 
