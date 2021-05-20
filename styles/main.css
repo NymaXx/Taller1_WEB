@@ -900,53 +900,6 @@ ul {
   display: flex;
   flex-direction: row;
 }
-.products__filtros {
-  display: flex;
-  flex-direction: column;
-  background-color: #5E0019;
-  color: #FAF5F5;
-  width: 25%;
-}
-.products__barrita {
-  padding-left: 8%;
-}
-.products__logoFiltro {
-  margin-top: 50px;
-  padding: 8%;
-  margin-bottom: 50px;
-}
-.products__genero {
-  list-style-type: none;
-}
-.products__idioma {
-  list-style-type: none;
-}
-.products__precio {
-  list-style-type: none;
-}
-.products__principalT {
-  font-family: "Martel";
-  font-size: 25px;
-  font-weight: 600;
-}
-.products__genero1 {
-  font-family: "Montserrat";
-  font-size: 13.5px;
-  font-weight: 200;
-  margin-top: 2px;
-}
-.products__precio1 {
-  font-family: "Montserrat";
-  font-size: 13.5px;
-  font-weight: 200;
-  margin-top: 2px;
-}
-.products__idioma1 {
-  font-family: "Montserrat";
-  font-size: 13.5px;
-  font-weight: 200;
-  margin-top: 2px;
-}
 .products__separadorInferior {
   background-color: #A1002A60;
   height: 4px;
@@ -2171,4 +2124,52 @@ textarea {
   width: 80%;
   margin-bottom: 5%;
   margin-left: 4%;
+}
+
+.filtros {
+  display: flex;
+  flex-direction: column;
+  background-color: #5E0019;
+  color: #FAF5F5;
+  width: 25%;
+}
+.filtros__barrita {
+  padding-left: 8%;
+}
+.filtros__logoFiltro {
+  margin-top: 50px;
+  padding: 8%;
+  margin-bottom: 50px;
+}
+.filtros__genero {
+  list-style-type: none;
+}
+.filtros__idioma {
+  list-style-type: none;
+}
+.filtros__precio {
+  list-style-type: none;
+}
+.filtros__principalT {
+  font-family: "Martel";
+  font-size: 25px;
+  font-weight: 600;
+}
+.filtros__genero1 {
+  font-family: "Montserrat";
+  font-size: 13.5px;
+  font-weight: 200;
+  margin-top: 2px;
+}
+.filtros__precio1 {
+  font-family: "Montserrat";
+  font-size: 13.5px;
+  font-weight: 200;
+  margin-top: 2px;
+}
+.filtros__idioma1 {
+  font-family: "Montserrat";
+  font-size: 13.5px;
+  font-weight: 200;
+  margin-top: 2px;
 }/*# sourceMappingURL=main.css.map */
