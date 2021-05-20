@@ -274,6 +274,8 @@
     display: flex;
     flex-direction: column;
     background-color: #ECC9C7;
+   
+   
 
     &__title{
         width: 100%;
@@ -289,10 +291,12 @@
     }
 
     &__carrousel{
+        position: relative;
         display: flex;
         width: 90%;
         margin-left: 5%;
         overflow: hidden;
+       
     }
 
     &__slyder {
@@ -301,6 +305,7 @@
         justify-content: center;
         align-items:center;
         transition: transform 700ms ease-in-out;
+       
     }
 
     &__slide {
