@@ -103,35 +103,62 @@
         font-family: 'Montserrat';
     }
 
-  
+    &__editorial{
+        width: 30%;
+    }
 
     &__presentacion{
-        margin-left: 5%;
+       // margin-left: 5%;
+        width: 30%;
     }
 
     &__ISBN{
-        margin-left: 13%;
-        margin-right: 10%;
+        //margin-left: 13%;
+        //margin-right: 10%;
+        width: 30%;
 
     }
 
     &__autores{
+        width: 30%;
         margin-top: 2%;
         
     }
 
     &__genero{
-        margin-left: 22.5%;
+        //margin-left: 22.5%;
         margin-top: 2%;
+        width: 30%;
     }
 
     &__formato{
-        margin-left: 19.5%;
+        //margin-left: 19.5%;
         margin-top: 2%;
+        width: 30%;
     }
 
     &__detailTitle{
         font-size: 12px;
+    }
+
+    &__detailDataEditorial{
+        font-size: 20px;
+    }
+
+    &__detailDataPresentacion{
+        font-size: 20px;
+    }
+
+    &__detailDataAutor{
+        font-size: 20px;
+    }
+
+    &__detailDataCategoria{
+        font-size: 20px;
+    }
+
+    &__detailDataFormato{
+        font-size: 20px;
     }
 
     &__detailData{

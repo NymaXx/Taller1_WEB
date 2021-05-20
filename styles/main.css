@@ -1118,26 +1118,44 @@ ul {
   flex-wrap: wrap;
   font-family: "Montserrat";
 }
+.productV__editorial {
+  width: 30%;
+}
 .productV__presentacion {
-  margin-left: 5%;
+  width: 30%;
 }
 .productV__ISBN {
-  margin-left: 13%;
-  margin-right: 10%;
+  width: 30%;
 }
 .productV__autores {
+  width: 30%;
   margin-top: 2%;
 }
 .productV__genero {
-  margin-left: 22.5%;
   margin-top: 2%;
+  width: 30%;
 }
 .productV__formato {
-  margin-left: 19.5%;
   margin-top: 2%;
+  width: 30%;
 }
 .productV__detailTitle {
   font-size: 12px;
+}
+.productV__detailDataEditorial {
+  font-size: 20px;
+}
+.productV__detailDataPresentacion {
+  font-size: 20px;
+}
+.productV__detailDataAutor {
+  font-size: 20px;
+}
+.productV__detailDataCategoria {
+  font-size: 20px;
+}
+.productV__detailDataFormato {
+  font-size: 20px;
 }
 .productV__detailData {
   font-size: 20px;
