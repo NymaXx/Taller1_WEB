@@ -89,51 +89,51 @@
     
     <form class="productForm" >
 
-        <label >Nombre:
-            <input type="text" placeholder="nombre del producto"  name="nombre">
+        <label class="lab">Nombre:
+            <input type="text" placeholder="Nombre del libro"  name="nombre" class="input">
         </label>
 
-        <label >Autor:
-            <input type="text" placeholder="Autor" name="autor">
+        <label class="lab">Autor:
+            <input type="text" placeholder="Autor" name="autor" class="input">
         </label>
 
-        <label >Editorial:
-            <input type="text" placeholder="Editorial del libro" name="editorial">
+        <label class="lab" >Editorial:
+            <input type="text" placeholder="Editorial del libro" name="editorial" class="input">
         </label>
 
-        <label>Presentacion: <br>
-            <select name="presentacion">
+        <label class="lab">Presentacion: <br>
+            <select name="presentacion" class="select">
                 <option value="Tapa Blanda"> Tapa Blanda </option>
                 <option value="Tapa Dura"> Tapa Dura </option>
             </select> 
         </label>
 
-        <label >Volumen:
-            <input type="number" placeholder="Volumen numero" name="volumen">
+        <label class="lab">Volumen:
+            <input type="number" placeholder="Volumen" name="volumen" class="input">
         </label>
 
-        <label >Dimensiones: (cm)
-            <input type="text" placeholder="Ancho:XXcm - Alto:XXcm" name="dimensiones">
+        <label class="lab">Dimensiones: (cm)
+            <input type="text" placeholder="Ancho:XXcm - Alto:XXcm" name="dimensiones" class="input">
         </label>
 
-        <label >Numero de Capitulos:
-            <input type="text" placeholder="Numero de capitulos" name="capitulos">
+        <label class="lab">Numero de Capitulos:
+            <input type="text" placeholder="Numero de capitulos" name="capitulos" class="input">
         </label>
         
-        <label >Numero de paginas:
-            <input type="number" placeholder="Numero de paginas" name="numpaginas">
+        <label class="lab">Numero de paginas:
+            <input type="number" placeholder="Numero de paginas" name="numpaginas" class="input">
         </label>
 
-        <label >Peso:
-            <input type="text" placeholder="Peso en gr" name="peso">
+        <label class="lab">Peso:
+            <input type="text" placeholder="Peso en gr" name="peso" class="input">
         </label>
 
-        <label >Precio:
-            <input type="number" placeholder="Precio del producto" name="precio">
+        <label class="lab">Precio:
+            <input type="number" placeholder="Precio del producto" name="precio" class="input">
         </label>
 
-        <label >Categoria:
-            <select name="categoria">
+        <label class="lab">Categoria:
+            <select name="categoria" class="select">
                 <option value="Juvenil"> Juvenil </option>
                 <option value="Policíaca"> Policíaca </option>
                 <option value="Terror"> Terror </option>
@@ -142,15 +142,15 @@
             </select> 
         </label>
 
-        <label>Idioma: <br>
-            <select name="idioma">
+        <label class="lab">Idioma: <br>
+            <select name="idioma" class="select">
                 <option value="Español"> Español </option>
                 <option value="Inglés"> Inglés </option>
             </select> 
         </label>
 
-        <label>Formato: <br>
-            <select name="formato">
+        <label class="lab">Formato: <br>
+            <select name="formato" class="select">
                 <option value="Libro"> Libro </option>
                 <option value="AudioLibro"> AudioLibro </option>
                 <option value="eBook"> eBook </option>
@@ -158,16 +158,17 @@
         </label>
 
         
-        <label>
+        <label class="lab">
             Descripción: <br>
             <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
         </label>
         
         <input type="file" name="image">
-        <img class="productForm__img hidden" src="" >
+        <img class="productForm__img hidden" src="" width="200px" >
 
 
         <button class="sendButton" type="submit">Enviar</button>
+        
 
     </form>
 
