@@ -109,7 +109,47 @@ filters.addEventListener('change', ()=>{
     }
 
 
-
+     //POR PRECIOS
+     const precios = [];
+     filters.precio.forEach((checkbox,index)=>{
+         if(checkbox.checked){
+             switch(index){
+                 case 0:
+                     categorias.push(
+                        productsCollection = productsCollection
+                        .where('precio', '<', 30000));
+                     break;
+ 
+                 case 1:
+                     categorias.push(productsCollection = productsCollection
+                        .where('precio', '>=', 30000)
+                        .where('precio', '<', 38000));
+                     break;
+ 
+                 case 2:
+                     categorias.push(productsCollection = productsCollection
+                        .where('precio', '>=', 38000)
+                        .where('precio', '<', 65000));
+                     break;
+ 
+                 case 3:
+                     categorias.push(productsCollection = productsCollection
+                        .where('precio', '>=', 65000)
+                        .where('precio', '<', 100000));
+                     break;
+ 
+                 case 4:
+                     categorias.push(productsCollection = productsCollection
+                        .where('precio', '>', 100000));
+                     break;
+             }
+         }
+     });
+ 
+     if(precios.length > 0){
+         productsCollection = productsCollection
+         .where('precio', 'in', precios);
+     }
 
 
 
