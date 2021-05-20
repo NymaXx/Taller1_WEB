@@ -2155,4 +2155,26 @@ textarea {
   font-weight: 200;
   margin-top: 2px;
   margin-left: 40px;
+}
+
+.gnralCont {
+  display: flex;
+  margin-top: 30%;
+  margin-bottom: 20%;
+  justify-content: center;
+}
+.gnralCont__sectionC {
+  display: flex;
+}
+.gnralCont__404Text {
+  font-family: "Martel";
+  color: #5E0019;
+  font-weight: 800;
+  font-size: 90px;
+  margin-left: 40%;
+}
+.gnralCont__message {
+  font-family: "Montserrat";
+  color: #5E0019;
+  font-size: 30px;
 }/*# sourceMappingURL=main.css.map */

@@ -13,7 +13,7 @@ const handleCollectionResult = (querySnapshot) => {
 
         const basicProd = document.createElement('article');
         basicProd.innerHTML = `
-            <a class="basicProd__imgCont" href="../html/productView.html">
+            <a class="basicProd__imgCont" href='../html/productView.html?id=${doc.id}&name=${data.name}'>
                 <img class="basicProd__img" src="${data.imageUrl}" alt="" >   
             </a>
     
@@ -36,7 +36,7 @@ const handleCollectionResult = (querySnapshot) => {
             </div>
             <div class="basicProd__buttons">
                 <button class="basicProd__add">Añadir al carrito</button>
-                <a href="../html/productView.html">
+                <a href='../html/productView.html?id=${doc.id}'>
                     <button class="basicProd__ver">Ver detalles</button>
                 </a> 
             </div>
