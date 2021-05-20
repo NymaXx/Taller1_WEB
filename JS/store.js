@@ -1,11 +1,11 @@
 
 const list = document.querySelector('.list');
-
 const filters = document.querySelector('.filtros');
+const sort = document.querySelector('.products__sort');
+const infSort = document.querySelector('.products__ordenarInferior');
 
 
 //funcion de creacion de los elementos
-
 const handleCollectionResult = (querySnapshot) => {
     list.innerHTML = '';
     querySnapshot.forEach((doc) => {
@@ -109,14 +109,14 @@ filters.addEventListener('change', ()=>{
     }
 
 
-     //POR PRECIOS
+     //POR PRECIOS --> al poner los push en el arreglo PRECIOS aparece un error de firebase, cuando se pone el array c
+     //categorias funciona visualmente el filtro pero no hay evidencia de que se lea con console.log
      const precios = [];
-     filters.precio.forEach((checkbox,index)=>{
+     filters.precio.forEach((checkbox, index) => {
          if(checkbox.checked){
              switch(index){
                  case 0:
-                     categorias.push(
-                        productsCollection = productsCollection
+                     categorias.push(productsCollection = productsCollection
                         .where('precio', '<', 30000));
                      break;
  
@@ -151,14 +151,69 @@ filters.addEventListener('change', ()=>{
          .where('precio', 'in', precios);
      }
 
-
-
+//visualizacion de los productos filtrados
    productsCollection.get().then(handleCollectionResult);
 });
 
 
 
 
+//SORT
+
+//select superior
+sort.addEventListener('change', ()=>{
+    let productsCollection = db.collection('products');
+
+    if(sort.order.value){
+        switch(sort.order.value){
+            case 'precio_asc':
+                productsCollection = productsCollection.orderBy('precio', 'asc');
+                break;
+
+            case 'precio_desc':
+                productsCollection = productsCollection.orderBy('precio', 'desc');
+                break;
+
+            case 'name_desc':
+                productsCollection = productsCollection.orderBy('name', 'asc');
+                break;
+        }
+    }
+
+    productsCollection.get().then(handleCollectionResult);
+
+});
+
+//select inferior
+infSort.addEventListener('change', ()=>{
+    let productsCollection = db.collection('products');
+
+    if(infSort.order.value){
+        switch(infSort.order.value){
+            case 'precio_asc':
+                productsCollection = productsCollection.orderBy('precio', 'asc');
+                break;
+
+            case 'precio_desc':
+                productsCollection = productsCollection.orderBy('precio', 'desc');
+                break;
+
+            case 'name_desc':
+                productsCollection = productsCollection.orderBy('name', 'asc');
+                break;
+        }
+    }
+
+    productsCollection.get().then(handleCollectionResult);
+
+});
+
+
+
+
+
+
+//visualizacion de los productos completos en general
 db.collection("products")
     .get()
     .then(handleCollectionResult);

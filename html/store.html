@@ -100,15 +100,15 @@
                     
                 </div>
 
-                <div class="products__sort">
-                    <label class="products__titleSort"> <strong> Ordenar por: </strong> </label>
-                    <select class="products__listSort">
-                        <option class="products__default"> Ordenar </option>
-                        <option class="products__menorAMayor"> Menor a Mayor precio </option>
-                        <option class="products__mayorAMenor"> Mayor a Menor precio </option>
-                        <option class="products__alfabetico"> A-Z </option>
+                <form class="products__sort">
+                    <label class="products__titleSort" for="order"> <strong> Ordenar por: </strong> </label>
+                    <select id="order" class="products__listSort" name="order">
+                        <option class="products__default" value="">  Ordenar </option>
+                        <option class="products__menorAMayor" value="precio_asc"> Menor a Mayor precio </option>
+                        <option class="products__mayorAMenor" value="precio_desc"> Mayor a Menor precio </option>
+                        <option class="products__alfabetico" value="name_desc"> A-Z </option>
                     </select>
-                </div>
+                </form>
 
             </div>
 
@@ -166,15 +166,15 @@
 
 
             <div class="products__separadorInferior"></div>
-            <div class="products__ordenarInferior">
-                <label class="products__titleDownSort"> <strong> Ordenar por: </strong> </label>
-                    <select class="products__listSortDown">
-                        <option class="products__default"> Ordenar </option>
-                        <option class="products__menorAMayor"> Menor a Mayor precio </option>
-                        <option class="products__mayorAMenor"> Mayor a Menor precio </option>
-                        <option class="products__alfabetico"> A-Z </option>
+            <form class="products__ordenarInferior">
+                <label class="products__titleDownSort" for="order"> <strong> Ordenar por: </strong> </label>
+                    <select id="order" class="products__listSortDown" name="order">
+                        <option class="products__default"  value=""> Ordenar </option>
+                        <option class="products__menorAMayor" value="precio_asc"> Menor a Mayor precio </option>
+                        <option class="products__mayorAMenor" value="precio_desc"> Mayor a Menor precio </option>
+                        <option class="products__alfabetico" value="name_desc"> A-Z </option>
                     </select>
-            </div>
+            </form>
 
            
 
