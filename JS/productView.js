@@ -54,21 +54,8 @@ db.collection('products')
         numCap.innerHTML = `<strong>Número de  capitulos:</strong> ${data.capitulos} `;
         prodDim.innerHTML = `<strong>Dimensiones:</strong> ${data.dimensiones} `;
         prodPeso.innerHTML = `<strong>Peso:</strong> ${data.peso} `;
+
+
+
+
     });
-
-
-    //CARRUSEL DEL FONDO
-    /*const slyderC = document.querySelector('.interest__slyder');
-    let currentSlide = 0;
-
-
-    function handleInterval(){
-        currentSlide++;
-        if(currentSlide >=4){
-            currentSlide =0;
-        }
-        slyderC.style.transform = `translate(-${ 300 * currentSlide }px, 0px)`;
-    }
-
-    setInterval(handleInterval, 2500);
-*/
