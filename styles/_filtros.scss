@@ -8,6 +8,8 @@
 
         &__barrita{
             padding-left: 8%;
+            margin-bottom: 10px;
+            margin-top: 20px;
         }
 
         &__logoFiltro{
@@ -17,43 +19,21 @@
         }
 
         //aqui empiezan las listas de los filtros
-        &__genero{
-            list-style-type: none;
-        }
-
-        &__idioma{
-            list-style-type: none;
-        }
-
-        &__precio{
-            list-style-type: none;
-            
-        }
 
         &__principalT{
         font-family: 'Martel';
         font-size: 25px;
         font-weight: 600;
+        margin-left: 40px;
         }
 
-        &__genero1{
-        font-family: 'Montserrat';
-        font-size: 13.5px;
-        font-weight: 200;
-        margin-top: 2px;
-        }
-
-        &__precio1{
-        font-family: 'Montserrat';
-        font-size: 13.5px;
-        font-weight: 200;
-        margin-top: 2px;
-        }
-
-        &__idioma1{
+        &__checks{
             font-family: 'Montserrat';
             font-size: 13.5px;
             font-weight: 200;
             margin-top: 2px;
-        }
+            margin-left: 40px; 
+            }
+
+       
 }

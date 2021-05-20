@@ -1,6 +1,39 @@
 
 const list = document.querySelector('.list');
 
+const filters = document.querySelector('.filtros');
+
+
+filters.generos.addEventListener('change', ()=>{
+    console.log(filters.generos);
+    let productsCollection = db.collection('products');
+
+   filters.generos.forEach((checkbox)=>{
+       if(checkbox.checked){
+        productsCollection = productsCollection.where('genero', '==', filters.genero.value);
+       }
+      
+        
+   });
+
+
+   productsCollection.get().then(handleCollectionResult);
+});
+
+
+db.collection('products')
+    .where('genero', '==', filters.genero.value)
+    .get()
+    .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            console.log(doc.data());
+        });
+
+    });
+
+
+
+
 db.collection("products")
     .get()
     .then((querySnapshot) => {
