@@ -25,6 +25,14 @@ ul {
           margin-block-end: 0.7em;
 }
 
+.modalLoginButton {
+  padding: 0;
+  background-color: #f7e4e400;
+  border-radius: 30px;
+  height: 48px;
+  border-color: #ECC9C7;
+}
+
 .header {
   display: flex;
   position: fixed;
@@ -990,22 +998,35 @@ ul {
   }
 }
 
-.maximum {
-  display: flex;
-  justify-content: center;
-}
-
 .container {
   display: flex;
   flex-direction: column;
-  margin-top: 250px;
   width: 350px;
-  margin-bottom: 100px;
   padding-bottom: 1%;
   border-radius: 20px;
-  background-color: #ECC9C740;
+  background-color: #f7e2df;
+  top: 120px;
+  margin: 10% auto;
 }
-.container__title {
+
+.authForm {
+  position: fixed;
+  background-color: #0000009c;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.authForm__error {
+  font-family: "Montserrat";
+  margin-left: 5%;
+  margin-right: 3%;
+  font-size: 12px;
+  color: red;
+  margin-bottom: 4%;
+}
+.authForm__title {
   display: flex;
   justify-content: center;
   font-family: "Martel";
@@ -1013,11 +1034,11 @@ ul {
   color: #FAF5F5;
   width: 100%;
 }
-.container__titlee {
+.authForm__titlee {
   font-size: 22px;
   padding: 2%;
 }
-.container__name {
+.authForm__name {
   border-color: #ECC9C7;
   border-style: solid;
   margin-top: 5%;
@@ -1026,7 +1047,7 @@ ul {
   padding: 3%;
   font-family: "Montserrat";
 }
-.container__email {
+.authForm__email {
   border-color: #ECC9C7;
   border-style: solid;
   margin-top: 3%;
@@ -1035,7 +1056,7 @@ ul {
   padding: 3%;
   font-family: "Montserrat";
 }
-.container__password {
+.authForm__password {
   border-color: #ECC9C7;
   border-style: solid;
   margin-top: 3%;
@@ -1045,11 +1066,11 @@ ul {
   padding: 3%;
   font-family: "Montserrat";
 }
-.container__buttons {
+.authForm__buttons {
   display: flex;
   justify-content: space-around;
 }
-.container__loginBtn {
+.authForm__loginBtn {
   background-color: #5E0019;
   font-family: "Martel";
   font-size: 15px;
@@ -1057,7 +1078,7 @@ ul {
   border-radius: 10px;
   width: 40%;
 }
-.container__registerBtn {
+.authForm__registerBtn {
   background-color: #5E0019;
   font-family: "Martel";
   font-size: 15px;
@@ -1065,10 +1086,20 @@ ul {
   border-radius: 10px;
   width: 40%;
 }
-.container__label {
+.authForm__registerBtn2 {
+  background-color: #5E0019;
+  font-family: "Martel";
+  font-size: 15px;
+  color: #FAF5F5;
+  border-radius: 10px;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 2%;
+}
+.authForm__label {
   font-size: 12px;
 }
-.container__input {
+.authForm__input {
   background-color: #5E001900;
   border-top: 0;
   border-right: 0;
