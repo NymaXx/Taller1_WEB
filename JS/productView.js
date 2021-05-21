@@ -58,7 +58,7 @@ db.collection('products')
 
 
     //CARRUSEL DEL FONDO
-    /*const slyderC = document.querySelector('.interest__slyder');
+    const slyderC = document.querySelector('.interest__slyder');
     let currentSlide = 0;
 
 
@@ -71,4 +71,3 @@ db.collection('products')
     }
 
     setInterval(handleInterval, 2500);
-*/
