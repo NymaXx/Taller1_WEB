@@ -1,6 +1,24 @@
 .publicidadStore{
     display: flex;
     margin-top: 175px;
+
+    &__pubResponsive{
+        display: none;
+    }
+
+    @media (max-width: 600px) { 
+
+        &__pubResponsive{
+            display: flex;
+            height: 300px;
+        }
+
+        &__publi1{
+            display: none;
+        }
+
+        
+    }
 }
 
 .products{
@@ -49,8 +67,6 @@
 
   //AQUI IBAN LOS FILTROS
 
-    //aqui se deberian agregar los estilos de los productos
-
     &__separadorInferior{
         background-color: #A1002A60;
         height: 4px;
@@ -96,6 +112,49 @@
         height: 35px;
         background-color: #ECC9C7;
         border: none;
+    }
+
+    &__responsiveTitle{
+        display: none;
+    }
+
+
+    @media (max-width: 600px) { 
+        &__titleSort{
+            display: none;
+        }
+
+        &__titleAndSort{
+            background-color: #FAF5F5;
+        }
+
+        &__titleDownSort{
+            display: none;
+        }
+
+        &__title1{
+            font-size: 12px;
+            display:none;
+        }
+
+        &__responsiveTitle{
+            display: flex;
+            margin-left: 7%;
+            align-items: center;
+        }
+
+        &__listSort{
+            width: 170px;
+            background-color: #ECC9C7;
+            border-radius: 10px;
+            border-color: #ECC9C7;
+        }
+
+        &__sort{
+            margin-left: 5%;
+        }
+
+
     }
 
 

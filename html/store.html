@@ -88,6 +88,7 @@
         <!--AQUI TERMINA EL HEADER-->
 
         <section class="publicidadStore">
+            <img src="../imgStore\responsivePUBLI.jpg" alt="" class="publicidadStore__pubResponsive">
             <img src="../imgStore/publiStore.jpg"  alt="" class="publicidadStore__publi1">
         </section>
 
@@ -97,8 +98,19 @@
                 <div class="products__title1">
                     FILTRA TU 
                     BUSQUEDA
-                    
                 </div>
+
+                <!-- PARA LO RESPONSIVE-->
+                <label class="products__responsiveTitle">
+                    <img src="../imgStore\iconoFILTRO.png" alt="" height="30px">
+                    <select id="order" class="products__listSort" name="order">
+                        <option class="products__default" value=""> Filtrar </option>
+                        <option class="products__menorAMayor" value="precio_asc"> Menor a Mayor precio </option>
+                        <option class="products__mayorAMenor" value="precio_desc"> Mayor a Menor precio </option>
+                        <option class="products__alfabetico" value="name_desc"> A-Z </option>
+                    </select>
+                </label>
+                <!--  FIN FILTROS PARA LO RESPONSIVE-->
 
                 <form class="products__sort">
                     <label class="products__titleSort" for="order"> <strong> Ordenar por: </strong> </label>
