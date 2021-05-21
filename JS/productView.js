@@ -59,15 +59,15 @@ db.collection('products')
 
     //CARRUSEL DEL FONDO
     const slyderC = document.querySelector('.interest__slyder');
-    let currentSlide = 0;
+    let currentSlidee = 0;
 
 
     function handleInterval(){
-        currentSlide++;
-        if(currentSlide >=4){
-            currentSlide =0;
+        currentSlidee++;
+        if(currentSlidee >=4){
+            currentSlidee =0;
         }
-        slyderC.style.transform = `translate(-${ 300 * currentSlide }px, 0px)`;
+        slyderC.style.transform = `translate(-${ 300 * currentSlidee }px, 0px)`;
     }
 
     setInterval(handleInterval, 2500);

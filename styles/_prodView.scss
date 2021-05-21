@@ -217,6 +217,77 @@
 
 
    //SECCION DE RESENA
+
+   //RESPONSIVE
+
+   @media (max-width: 600px) { 
+    flex-direction: column;
+    margin-top: 190px;
+    padding-left: 5%;
+
+        &__Separador{
+            width: 95%;
+        }
+
+        &__img{
+            margin-left: 15.5%;
+        }
+
+        &__imge{
+        width: 280px;
+        }
+
+        &__anadirAlCarro{
+            width: 40%;
+            margin-left: 24%;
+        }
+
+        &__descripcion{
+            margin-bottom: 20px;
+        }
+
+        &__detailDataEditorial{
+            font-size: 18px;
+        }
+
+        &__detailDataPresentacion{
+            font-size: 18px;
+        }
+
+        &__detailDataAutor{
+            font-size: 18px;
+        }
+
+        &__detailDataCategoria{
+            font-size: 18px;
+        }
+
+        &__detailDataFormato{
+            font-size: 18px;
+        }
+
+        &__detailData{
+            font-size: 18px;
+        }
+
+        &__detailTitle{
+            font-size: 11px;
+        }
+
+        &__textExpand{
+            font-size: 16px;
+            text-align: center;
+            margin-right: 1%;
+        }
+
+        &__espList2{
+            margin-left: 0%;
+        }
+        &__espList1{
+            padding-left: 5%;
+        }
+
+    }
 }
 
 .resena{
@@ -267,6 +338,19 @@
     }
     &__textt2{
         margin-top: 1%;
+    }
+
+    @media (max-width: 600px){
+        margin-top: 15%;
+        margin-bottom: 20%;
+        &__title{
+            font-size: 20px;
+        }
+
+        &__add{
+            font-size: 15px;
+            margin-right: 6%;
+        }
     }
 }
 

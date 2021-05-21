@@ -1245,6 +1245,61 @@ ul {
   margin-right: 10%;
   margin-bottom: 5%;
 }
+@media (max-width: 600px) {
+  .productV {
+    flex-direction: column;
+    margin-top: 190px;
+    padding-left: 5%;
+  }
+  .productV__Separador {
+    width: 95%;
+  }
+  .productV__img {
+    margin-left: 15.5%;
+  }
+  .productV__imge {
+    width: 280px;
+  }
+  .productV__anadirAlCarro {
+    width: 40%;
+    margin-left: 24%;
+  }
+  .productV__descripcion {
+    margin-bottom: 20px;
+  }
+  .productV__detailDataEditorial {
+    font-size: 18px;
+  }
+  .productV__detailDataPresentacion {
+    font-size: 18px;
+  }
+  .productV__detailDataAutor {
+    font-size: 18px;
+  }
+  .productV__detailDataCategoria {
+    font-size: 18px;
+  }
+  .productV__detailDataFormato {
+    font-size: 18px;
+  }
+  .productV__detailData {
+    font-size: 18px;
+  }
+  .productV__detailTitle {
+    font-size: 11px;
+  }
+  .productV__textExpand {
+    font-size: 16px;
+    text-align: center;
+    margin-right: 1%;
+  }
+  .productV__espList2 {
+    margin-left: 0%;
+  }
+  .productV__espList1 {
+    padding-left: 5%;
+  }
+}
 
 .resena {
   margin-left: 4%;
@@ -1287,6 +1342,19 @@ ul {
 }
 .resena__textt2 {
   margin-top: 1%;
+}
+@media (max-width: 600px) {
+  .resena {
+    margin-top: 15%;
+    margin-bottom: 20%;
+  }
+  .resena__title {
+    font-size: 20px;
+  }
+  .resena__add {
+    font-size: 15px;
+    margin-right: 6%;
+  }
 }
 
 .interest {
