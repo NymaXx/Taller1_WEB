@@ -27,3 +27,8 @@ firebase.auth().onAuthStateChanged((user) => {
     userLoggedOut();
   }
 });
+
+const toCartBtn = document.querySelector('.header__toCartBtn');
+toCartBtn.addEventListener('click', ()=>{
+  location.href = './cart.html';
+});
