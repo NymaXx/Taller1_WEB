@@ -109,3 +109,4 @@ authModal.addEventListener('submit', (event)=>{
     };
 
 });
+
