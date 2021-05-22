@@ -4,6 +4,12 @@ const filters = document.querySelector('.filtros');
 const sort = document.querySelector('.products__sort');
 const infSort = document.querySelector('.products__ordenarInferior');
 
+/*console.log(loggedUser);
+setTimeout(()=>{
+    console.log(loggedUser);
+}, 2000);
+*/
+
 
 //funcion de creacion de los elementos
 const handleCollectionResult = (querySnapshot) => {
@@ -40,6 +46,7 @@ const handleCollectionResult = (querySnapshot) => {
                     <button class="basicProd__ver">Ver detalles</button>
                 </a> 
             </div>
+            <button class="basicProd__borrar showAdmin">Eliminar</button>
         `
     
         basicProd.classList.add('basicProd');
@@ -207,10 +214,6 @@ infSort.addEventListener('change', ()=>{
     productsCollection.get().then(handleCollectionResult);
 
 });
-
-
-
-
 
 
 //visualizacion de los productos completos en general

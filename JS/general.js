@@ -12,18 +12,18 @@ const firebaseConfig = {
 const db = firebase.firestore();
 const storage = firebase.storage();
 
+let loggedUser = null;
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-    console.log('onAuthStateChange', user);
-
     db.collection('users').doc(user.uid).get().then((doc)=>{
-      console.log(doc.data());
+      loggedUser = doc.data();
+      loggedUser.uid = user.uid;
+
+      userLoggedIn();
     });
-
-
   } else {
-    // User is signed out
-    // ...
+    loggedUser = null;
+    userLoggedOut();
   }
 });

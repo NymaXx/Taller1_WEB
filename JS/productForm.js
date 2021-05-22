@@ -82,3 +82,8 @@ productForm.addEventListener('submit', (event) => {
 });
 
 
+
+
+if(!loggedUser || !loggedUser.admin){
+    location.href = '/html/store.html';
+}

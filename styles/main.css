@@ -1810,150 +1810,13 @@ ul {
   align-self: center;
 }
 
-.Adminproducts {
-  margin-top: 200px;
-}
-.Adminproducts__titleAndSort {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  background-color: #5E0019;
-  color: #FAF5F5;
-  align-items: center;
-  height: 100px;
-}
-.Adminproducts__title1 {
-  font-family: "Martel";
-  font-size: 22px;
-  font-weight: 700;
-  width: 10%;
-  margin-left: 3%;
-}
-.Adminproducts__sort {
-  margin-left: 30%;
-}
-.Adminproducts__titleSort {
-  font-family: "Martel";
-  font-size: 22px;
-  font-weight: 700;
-}
-.Adminproducts__listSort {
-  font-family: "Montserrat";
-  padding: 3px;
-  font-size: 17px;
-  border-radius: 20px;
-  width: 300px;
-  height: 35px;
-}
-.Adminproducts__filtersAndBooksContainer {
-  display: flex;
-  flex-direction: row;
-}
-.Adminproducts__filtros {
-  display: flex;
-  flex-direction: column;
-  background-color: #5E0019;
-  color: #FAF5F5;
-  width: 25%;
-}
-.Adminproducts__barrita {
-  padding-left: 8%;
-}
-.Adminproducts__logoFiltro {
-  margin-top: 50px;
-  padding: 8%;
-  margin-bottom: 50px;
-}
-.Adminproducts__genero {
-  list-style-type: none;
-}
-.Adminproducts__idioma {
-  list-style-type: none;
-}
-.Adminproducts__precio {
-  list-style-type: none;
-}
-.Adminproducts__principalT {
-  font-family: "Martel";
-  font-size: 25px;
-  font-weight: 600;
-}
-.Adminproducts__genero1 {
-  font-family: "Montserrat";
-  font-size: 13.5px;
-  font-weight: 200;
-  margin-top: 2px;
-}
-.Adminproducts__precio1 {
-  font-family: "Montserrat";
-  font-size: 13.5px;
-  font-weight: 200;
-  margin-top: 2px;
-}
-.Adminproducts__idioma1 {
-  font-family: "Montserrat";
-  font-size: 13.5px;
-  font-weight: 200;
-  margin-top: 2px;
-}
-.Adminproducts__separadorInferior {
-  background-color: #A1002A60;
-  height: 4px;
-  width: 95%;
-  margin-left: 3%;
-  margin-top: 6%;
-  margin-bottom: 1.5%;
-}
-.Adminproducts__separadorInferior1 {
-  background-color: #A1002A60;
-  height: 4px;
-  width: 95%;
-  margin-left: 1%;
-  margin-top: 3%;
-  margin-bottom: 1.5%;
-}
-.Adminproducts__articulos {
-  width: 100%;
-  margin-left: 2%;
-}
-.Adminproducts__ordenarInferior {
-  margin-left: 22%;
-  margin-bottom: 45px;
-}
-.Adminproducts__titleDownSort {
-  font-family: "Martel";
-  font-size: 23px;
-  font-weight: 700;
-  color: #5E0019;
-}
-.Adminproducts__listSortDown {
-  font-family: "Montserrat";
-  padding: 3px;
-  font-size: 17px;
-  border-radius: 20px;
-  width: 300px;
-  height: 35px;
-  background-color: #ECC9C7;
-  border: none;
-}
-.Adminproducts__guardarBTN {
-  background-color: #5E0019;
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 18px;
-  color: #FAF5F5;
-  border-radius: 10px;
-  width: 30%;
-  margin-left: 22%;
-  margin-top: 3%;
-  height: 65px;
-}
 .Adminproducts__addElementContainer {
   background-color: #00000030;
-  width: 222px;
+  width: 97%;
   display: flex;
   justify-content: center;
-  height: 408px;
+  height: 50px;
+  margin-bottom: 1%;
 }
 .Adminproducts__addElement {
   background-color: #5E0019;
@@ -2241,6 +2104,18 @@ ul {
   height: 30px;
   border-radius: 5px;
 }
+.basicProd__borrar {
+  font-family: "Montserrat";
+  background-color: #5E0019;
+  border-color: #5E0019;
+  color: #FAF5F5;
+  height: 30px;
+  border-radius: 5px;
+  width: 88%;
+  margin-top: 1%;
+  padding-left: 30%;
+  padding-top: 2%;
+}
 @media (max-width: 700px) {
   .basicProd {
     width: 47%;
@@ -2263,6 +2138,10 @@ ul {
   .basicProd__buttons {
     display: initial;
   }
+}
+
+.showAdmin {
+  display: none;
 }
 
 .productForm {

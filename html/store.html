@@ -34,7 +34,7 @@
             
                             <div class="header__login">
                                 <!--INGRESAR BUUTTON-->
-                                <button class="modalLoginButton"> <img src="../img\ingresaBUTTON.png" alt="ingresarBoton"> </button>
+                                <button class="modalLoginButton"> <img class="imgLogINout" src="../img\ingresaBUTTON.png" alt="ingresarBoton"> </button>
                             </div>
                         </div>
 
@@ -165,16 +165,23 @@
         
                     <div class="products__articulos">
                         <div class="products__separadorInferior1"></div>
-
+                        <!--BOTON DE ADMIN-->
+                        <a class="Adminproducts__addElementContainer showAdmin" href="../html\productForm.html">
+                            <button class="Adminproducts__addElement">Agregar</button>  
+                        </a> 
                         
                         <!--SE LLENA CON JS Y FIREBASE -->
 
                         <section class="list">
                             
                         </section>
+                        
+                        
+                        
                     </div>
-
+                    
                 </div>
+                
                 
             
 
@@ -276,5 +283,6 @@
         <script src="../JS/general.js"></script>
         <script src="../JS/loginModal.js"></script>
         <script src="../JS/store.js"></script>
+        <script src="../JS/authUtils.js"></script>
     </body>
     </html>

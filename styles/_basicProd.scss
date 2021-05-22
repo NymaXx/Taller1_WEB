@@ -71,6 +71,20 @@
         border-radius: 5px;
     }
 
+    &__borrar{
+        font-family: 'Montserrat';
+        background-color: #5E0019;
+        border-color: #5E0019;
+        color: #FAF5F5;
+        height: 30px;
+        border-radius: 5px;
+        width: 88%;
+        margin-top: 1%;
+        padding-left: 30%;
+        padding-top: 2%;
+        //display:none;
+    }
+
     @media (max-width: 700px) { 
         width: 47%;
         font-size: 12px;
@@ -101,4 +115,8 @@
 
         
 
+}
+
+.showAdmin{
+    display:none;
 }
