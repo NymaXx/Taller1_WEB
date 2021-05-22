@@ -4,11 +4,15 @@ const filters = document.querySelector('.filtros');
 const sort = document.querySelector('.products__sort');
 const infSort = document.querySelector('.products__ordenarInferior');
 
-/*console.log(loggedUser);
-setTimeout(()=>{
-    console.log(loggedUser);
-}, 2000);
-*/
+
+let cart = [];
+const numberOfCart = document.querySelector('.header__pinCartText');
+
+const cartFromLS = localStorage.getItem('dummy__Cart');
+if(cartFromLS){
+    cart = JSON.parse(cartFromLS);
+    numberOfCart.innerText = cart.length;
+}
 
 
 //funcion de creacion de los elementos
@@ -52,6 +56,20 @@ const handleCollectionResult = (querySnapshot) => {
         basicProd.classList.add('basicProd');
         list.appendChild(basicProd);
 
+        
+        const addToCartBtn = basicProd.querySelector('.basicProd__add');
+        addToCartBtn.addEventListener('click', ()=>{
+            if(loggedUser){
+                cart.push(data);
+                console.log(cart, loggedUser);
+                localStorage.setItem('dummy__Cart', JSON.stringify(cart));
+                numberOfCart.innerText = cart.length;
+
+
+            }else{
+                alert('Por favor iniciar sesión o registrarse para poder añadir elementos al carrito');
+                 }
+        })
     });
 };
 

@@ -17,7 +17,14 @@ function userLoggedIn(){
         const showLoggedAdmin = document.querySelectorAll('.showAdmin');
         showLoggedAdmin.forEach((elem)=>{
             elem.style = "display:flex";
+
+       
         });
+        const addToCartBtn = document.querySelectorAll('.basicProd__add');
+        addToCartBtn.forEach((e)=>{
+            e.style = 'display:none';
+        });
+        
     }
 
     openModal.style = 'display:none';
@@ -25,11 +32,13 @@ function userLoggedIn(){
 
 function userLoggedOut(){
     iconClose.src = '../img/ingresaBUTTON.png'; //cambio de  icono para logIn
-    console.log(loggedUser);
+    //console.log(loggedUser);
 
     authButton.addEventListener('click', ()=>{ //Para Mostrar el Modal e ingresar
         openModal.style = 'display: block';
     });
 
+
     
 }
+
