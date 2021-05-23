@@ -1606,6 +1606,81 @@ ul {
   width: 38.5%;
   margin-top: 3%;
 }
+@media (max-width: 700px) {
+  .payContainer {
+    width: 100%;
+    margin-right: 0;
+  }
+  .payContainer__input {
+    width: 100%;
+  }
+  .payContainer__name {
+    margin-left: 4%;
+    width: 85%;
+  }
+  .payContainer__lastName {
+    margin-left: 4%;
+    width: 85%;
+  }
+  .payContainer__documentType {
+    margin-left: 4%;
+    width: 85%;
+    margin-bottom: 0;
+  }
+  .payContainer__documentNumber {
+    margin-left: 4%;
+    width: 85%;
+  }
+  .payContainer__pais {
+    margin-left: 4%;
+    width: 85%;
+  }
+  .payContainer__depto {
+    margin-left: 4%;
+    width: 85%;
+  }
+  .payContainer__city {
+    margin-left: 4%;
+    width: 85%;
+    margin-bottom: 0;
+  }
+  .payContainer__direccion {
+    margin-left: 4%;
+    width: 85%;
+  }
+  .payContainer__tarjeta {
+    margin-left: 4%;
+    width: 85%;
+  }
+  .payContainer__numtarjeta {
+    margin-left: 4%;
+    width: 85%;
+  }
+  .payContainer__fechatarjeta {
+    margin-left: 4%;
+    width: 85%;
+  }
+  .payContainer__titularName {
+    margin-left: 4%;
+    width: 85%;
+  }
+  .payContainer__cvv {
+    margin-left: 4%;
+    width: 85%;
+  }
+  .payContainer__label {
+    font-size: 14px;
+  }
+  .payContainer__personal {
+    flex-direction: column;
+  }
+  .payContainer__direccionn {
+    flex-direction: column;
+  }
+  .payContainer__paggo {
+    flex-direction: column;
+  }
+}
 
 .orden {
   margin-top: 220px;
@@ -1642,6 +1717,19 @@ ul {
   height: 30px;
 }
 .orden__comprarBtn {
+  background-color: #5E0019;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 18px;
+  color: #FAF5F5;
+  border-radius: 10px;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 3%;
+  height: 65px;
+  margin-bottom: 10%;
+}
+.orden__finalizarCompraBtn {
   background-color: #5E0019;
   font-family: "Montserrat";
   font-weight: 600;
@@ -1713,6 +1801,15 @@ ul {
 .mensaje__texto {
   width: 50%;
   text-align: center;
+}
+@media (max-width: 700px) {
+  .mensaje {
+    font-size: 19px;
+  }
+  .mensaje__texto {
+    width: 70%;
+    text-align: center;
+  }
 }
 
 .gnral {

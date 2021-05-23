@@ -35,8 +35,7 @@ cart.forEach((data) => {
                 </table>
                 </div>
 
-                <a href="payment.html" style="color:#ffffff;"><button class="orden__comprarBtn">
-                COMPRAR</button></a>
+                <button class="orden__finalizarCompraBtn"> FINALIZAR COMPRA </button>
 
         `
         ordenCheck.classList.add('orden');   

@@ -188,6 +188,102 @@
         margin-top: 3%;
     }
 
+    
+
+    @media (max-width: 700px) { 
+        width: 100%;
+        margin-right: 0;
+
+        &__input{
+            width:100% ;
+        }
+
+        &__name{
+            margin-left: 4%;
+            width: 85%;
+        }
+
+        &__lastName{
+            margin-left: 4%;
+            width: 85%;
+        }
+
+        &__documentType{
+            margin-left: 4%;
+            width: 85%;
+            margin-bottom:0 ;
+        }
+
+        &__documentNumber{
+            margin-left: 4%;
+            width: 85%;
+        }
+
+       &__pais{
+            margin-left: 4%;
+            width: 85%;
+        }
+
+        &__depto{
+            margin-left: 4%;
+            width: 85%;
+        }
+
+        &__city{
+            margin-left: 4%;
+            width: 85%;
+            margin-bottom:0 ;
+        }
+
+        &__direccion{
+            margin-left: 4%;
+            width: 85%;
+        }
+
+        &__tarjeta{
+            margin-left: 4%;
+            width: 85%;
+        }
+
+        &__numtarjeta{
+            margin-left: 4%;
+            width: 85%;
+        }
+
+        &__fechatarjeta{
+            margin-left: 4%;
+            width: 85%;
+        }
+
+        &__titularName{
+            margin-left: 4%;
+            width: 85%;
+        }
+
+        &__cvv{
+            margin-left: 4%;
+            width: 85%;
+        }
+
+        &__label{
+            font-size: 14px;
+        }
+
+        &__personal{
+            flex-direction: column;
+        }
+
+        &__direccionn{
+            flex-direction: column;
+        }
+
+        &__paggo{
+            flex-direction: column;
+        }
+
+    }
+
+
 }
 
 .orden{
@@ -244,8 +340,20 @@
         margin-top: 3%;
         height: 65px;
         margin-bottom: 10%;
-        
-       
+    }
+
+    &__finalizarCompraBtn{
+        background-color:#5E0019;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 18px;
+        color: #FAF5F5;
+        border-radius: 10px;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 3%;
+        height: 65px;
+        margin-bottom: 10%;
     }
 
     &__resTitle{
@@ -317,5 +425,17 @@
         text-align: center;
 
     }
+
+    @media (max-width: 700px) { 
+        font-size: 19px;
+        &__texto{
+            width: 70%;
+            text-align: center;
+
+    
+        }
+    }
+
+
 }
 
