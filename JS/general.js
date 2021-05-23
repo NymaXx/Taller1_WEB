@@ -58,6 +58,8 @@ const addToMyCart = (product)=>{
 };
 
 let renderCart = null;
+let totalPrice =0;
+let renderTotal = null;
 
 const getMyCart = (uid) => {
   CART_COLLECTION.doc(uid).get().then(snapShot =>{
@@ -68,7 +70,8 @@ const getMyCart = (uid) => {
 
   
       if(renderCart) renderCart();
-    
+      if(renderTotal) renderTotal();
+      
   });
 
 }

@@ -1,6 +1,6 @@
 const list =document.querySelector('.cartContainer__list')
 
-let total =0;
+//let totalPrice =0;
  
 renderCart = ()=>{
     cart.forEach((data) => {
@@ -34,7 +34,7 @@ renderCart = ()=>{
         basicProd.classList.add('cartContainer__item1');
         list.appendChild(basicProd);
     
-        total += data.precio;
+        totalPrice += data.precio;
      });
 
 
@@ -42,7 +42,7 @@ renderCart = ()=>{
     const generalC = document.querySelector('.gnral');
     const container = document.querySelector('.notica');
     let precioEnvio = 0;
-    if(total > 0){
+    if(totalPrice > 0){
         precioEnvio = 11000;
         const ordenCheck = document.createElement('section');
         ordenCheck.innerHTML = `
@@ -56,7 +56,7 @@ renderCart = ()=>{
                 <table class="orden__table">
                     <tr>
                     <td>Subtotal</td>
-                    <td >$ ${total}</td>
+                    <td >$ ${totalPrice}</td>
                     </tr>
                     <tr>
                     <td>Envio</td>
@@ -64,14 +64,14 @@ renderCart = ()=>{
                     </tr>
                     <tr class="orden__TOTAL">
                     <td>Total</td>
-                    <td >$ ${total + precioEnvio}</td>
+                    <td >$ ${totalPrice + precioEnvio}</td>
                     </tr>
                     <tr>
                 </table>
                 </div>
 
                 <a href="payment.html" style="color:#ffffff;"><button class="orden__comprarBtn">
-                CONTINUAR CON LA COMPRA</button></a>
+                COMPRAR</button></a>
 
         `
         ordenCheck.classList.add('orden');   
