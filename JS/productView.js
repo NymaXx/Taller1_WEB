@@ -71,7 +71,27 @@ db.collection('products')
         numCap.innerHTML = `<strong>Número de  capitulos:</strong> ${data.capitulos} `;
         prodDim.innerHTML = `<strong>Dimensiones:</strong> ${data.dimensiones} `;
         prodPeso.innerHTML = `<strong>Peso:</strong> ${data.peso} `;
+
+        addFromDetail.addEventListener('click', ()=>{
+            console.log("hi");
+            if(loggedUser){
+                addToMyCart({
+                    ...data,
+                    id: doc.id,
+                });
+                //localStorage.setItem('dummy__Cart', JSON.stringify(cart));  //in function
+                //numberOfCart.innerText = cart.length;
+            }else{
+                alert('Por favor iniciar sesión o registrarse para poder añadir elementos al carrito');
+                 }
+        });
     });
+
+   
+   
+
+    //productV__anadirAlCarro
+
 
 
     //CARRUSEL DEL FONDO

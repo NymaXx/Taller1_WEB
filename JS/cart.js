@@ -38,10 +38,9 @@ renderCart = ()=>{
           //seleccionar el boton para eliminar
             const deleteBtn = basicProd.querySelector('.cartContainer__deleteItemBtn');
             deleteBtn.addEventListener('click', ()=>{
-                el = data.id;
-                deleteFromMyCart();
-
-                //console.log(data.name);
+                elToDelete = data;
+                console.log(elToDelete);
+                
             })
         
         

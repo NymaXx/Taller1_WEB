@@ -58,19 +58,9 @@ const addToMyCart = (product)=>{
     
     numberOfCart.innerText = cart.length;
 };
-let el;
-const deleteFromMyCart = ()=>{
-   /* CART_COLLECTION.doc(uid).get(cart.id)
-    .set(null);*/
-    cart.forEach((i)=>{
-      if(i.id == el){
-        CART_COLLECTION.doc(loggedUser.uid.cart[i]).set(null);
-      }
-    });
-    
-    console.log(el);
 
-};
+let elToDelete;
+
 
 let renderCart = null;
 let totalPrice =0;
