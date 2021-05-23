@@ -1,6 +1,11 @@
 .gnral{
     display: flex;
+    @media (max-width: 700px) { 
+        flex-direction: column;
 
+
+
+    }
    
 }
 
@@ -22,15 +27,16 @@
         margin-bottom: 2%;
     }
 
-    &__items{
+    &__list{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     &__item1{
         margin-left: 8%;
         display: flex;
         flex-direction: row;
+        margin-top: 3%;
     }
 
     &__description{
@@ -110,12 +116,61 @@
         background-color: #FAF5F5;
         font-family: 'Montserrat';
         font-size: 16px;
+        margin-bottom: 4%;
     }
 
     &__imgb{
         margin-right: 8px;
     }
 
+    &__valorU{
+        width: 40%;
+    }
+
+    &__precioResponsive{
+        display: none;
+    }
+
+    @media (max-width: 700px) { 
+        width: 100%;
+        &__item1{
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: 0;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        &__valorU{
+           display: none;
+        }
+
+        &__valorT{
+            width: 35%;
+            display: none;
+        }
+
+        &__description{
+            //text-align: center;
+            margin: 0;
+            width: 50%;
+        }
+
+        &__precioResponsive{
+            display: block;
+        }
+
+        &__imgProd{
+            height: 200px;
+            margin-right: 15px;
+        }
+
+        &__desTitle1{
+            width: 240px;
+        }
+
+    }
    
 }
 
@@ -144,4 +199,20 @@
         
     }
 
+    @media (max-width: 700px) { 
+
+        &__textDespachos{
+            width: 100%;
+            font-size: 20px;
+        }
+    }
+}
+
+.notica{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 600;
+    color: #5E0019;
+    text-align: center;
+    margin-top: 5%;
 }

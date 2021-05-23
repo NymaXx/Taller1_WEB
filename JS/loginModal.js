@@ -97,10 +97,12 @@ authModal.addEventListener('submit', (event)=>{
                 var user = userCredential.user;
                 console.log(user);
                 
-                db.collection('users').doc(user.uid).set({
+                const userDoc ={
                     nombre: regName,
                     email: email,
-                });
+                };
+                db.collection('users').doc(user.uid).set(userDoc);
+                setLoggedUser(userDoc, user.uid);
             })
             .catch((error) => {
                 console.log(error);

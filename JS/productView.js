@@ -1,6 +1,23 @@
 const params = new URLSearchParams(location.search);
 const id = params.get('id');
 console.log(id);
+const addFromDetail = document.querySelector('.productV__anadirAlCarro');
+
+/*
+addFromDetail.addEventListener('click', ()=>{
+    if(loggedUser){
+        console.log(cart, loggedUser);
+        addToMyCart({
+            ...data,
+            id: doc.id,
+        });
+        //localStorage.setItem('dummy__Cart', JSON.stringify(cart));  //in function
+        //numberOfCart.innerText = cart.length;
+    }else{
+        alert('Por favor iniciar sesión o registrarse para poder añadir elementos al carrito');
+         }
+})
+*/
 
 if(!id){
     location.href= './404.html';

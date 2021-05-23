@@ -14,17 +14,25 @@ const storage = firebase.storage();
 
 let loggedUser = null;
 
+const setLoggedUser = (info, id)=>{
+  loggedUser = info;
+  loggedUser.uid = id;
+  userLoggedIn();
+}
+
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     db.collection('users').doc(user.uid).get().then((doc)=>{
-      loggedUser = doc.data();
-      loggedUser.uid = user.uid;
-
-      userLoggedIn();
+      if(!doc.data())return;
+      setLoggedUser(doc.data(), user.uid);
     });
+    getMyCart(user.uid);
+
   } else {
     loggedUser = null;
+    cart = [];
     userLoggedOut();
+    numberOfCart.innerText = '';
   }
 });
 
@@ -33,3 +41,45 @@ toCartBtn.addEventListener('click', ()=>{
   location.href = './cart.html';
 });
 
+
+
+
+//cart  FIREBASE
+let cart = [];
+const numberOfCart = document.querySelector('.header__pinCartText');
+const CART_COLLECTION = db.collection('cart');
+
+const addToMyCart = (product)=>{
+    cart.push(product);
+    CART_COLLECTION.doc(loggedUser.uid).set({
+      cart,
+    });
+    numberOfCart.innerText = cart.length;
+};
+
+let renderCart = null;
+
+const getMyCart = (uid) => {
+  CART_COLLECTION.doc(uid).get().then(snapShot =>{
+    const data =snapShot.data();
+    if(!data) return;
+    numberOfCart.innerText = data.cart.length;
+    cart =data.cart;
+
+  
+      if(renderCart) renderCart();
+    
+  });
+
+}
+
+
+//cart LOCAL STORAGE
+/*const cartFromLS = localStorage.getItem('dummy__Cart');
+if(cartFromLS){
+    cart = JSON.parse(cartFromLS);
+    if(numberOfCart){
+      numberOfCart.innerText = cart.length;
+    }
+    
+}*/
