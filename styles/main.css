@@ -1448,7 +1448,7 @@ ul {
   flex-direction: row;
 }
 
-.payContainer {
+.payForm {
   display: flex;
   margin-top: 220px;
   flex-direction: column;
@@ -1456,7 +1456,7 @@ ul {
   margin-right: 2%;
   font-family: "Montserrat";
 }
-.payContainer__title {
+.payForm__title {
   width: 93%;
   background-color: #5E0019;
   font-family: "Martel";
@@ -1468,10 +1468,10 @@ ul {
   padding-top: 0.8%;
   margin-bottom: 2%;
 }
-.payContainer__label {
+.payForm__label {
   font-size: 12px;
 }
-.payContainer__input {
+.payForm__input {
   background-color: #5E001900;
   border-top: 0;
   border-right: 0;
@@ -1482,12 +1482,12 @@ ul {
   color: #292929;
   font-weight: 200;
 }
-.payContainer__personal {
+.payForm__personal {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.payContainer__name {
+.payForm__name {
   border-color: #ECC9C7;
   border-style: solid;
   margin-top: 2%;
@@ -1496,14 +1496,14 @@ ul {
   padding: 3%;
   width: 38.5%;
 }
-.payContainer__lastName {
+.payForm__lastName {
   border-color: #ECC9C7;
   border-style: solid;
   margin-top: 2%;
   padding: 3%;
   width: 38.5%;
 }
-.payContainer__documentType {
+.payForm__documentType {
   border-color: #ECC9C7;
   border-style: solid;
   margin-top: 3%;
@@ -1513,7 +1513,7 @@ ul {
   padding: 3%;
   width: 38.5%;
 }
-.payContainer__documentNumber {
+.payForm__documentNumber {
   border-color: #ECC9C7;
   border-style: solid;
   margin-top: 3%;
@@ -1521,12 +1521,12 @@ ul {
   padding: 3%;
   width: 38.5%;
 }
-.payContainer__direccionn {
+.payForm__direccionn {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.payContainer__pais {
+.payForm__pais {
   border-color: #ECC9C7;
   border-style: solid;
   margin-top: 2%;
@@ -1535,14 +1535,14 @@ ul {
   padding: 3%;
   width: 38.5%;
 }
-.payContainer__depto {
+.payForm__depto {
   border-color: #ECC9C7;
   border-style: solid;
   margin-top: 2%;
   padding: 3%;
   width: 38.5%;
 }
-.payContainer__city {
+.payForm__city {
   border-color: #ECC9C7;
   border-style: solid;
   margin-top: 3%;
@@ -1552,7 +1552,7 @@ ul {
   padding: 3%;
   width: 38.5%;
 }
-.payContainer__direccion {
+.payForm__direccion {
   border-color: #ECC9C7;
   border-style: solid;
   margin-top: 3%;
@@ -1560,12 +1560,12 @@ ul {
   padding: 3%;
   width: 38.5%;
 }
-.payContainer__paggo {
+.payForm__paggo {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.payContainer__tarjeta {
+.payForm__tarjeta {
   border-color: #ECC9C7;
   border-style: solid;
   margin-top: 2%;
@@ -1574,21 +1574,21 @@ ul {
   padding: 3%;
   width: 38.5%;
 }
-.payContainer__numtarjeta {
+.payForm__numtarjeta {
   border-color: #ECC9C7;
   border-style: solid;
   margin-top: 2%;
   padding: 3%;
   width: 38.5%;
 }
-.payContainer__titularName {
+.payForm__titularName {
   border-color: #ECC9C7;
   border-style: solid;
   margin-top: 3%;
   padding: 3%;
   width: 38.5%;
 }
-.payContainer__fechatarjeta {
+.payForm__fechatarjeta {
   border-color: #ECC9C7;
   border-style: solid;
   margin-top: 3%;
@@ -1597,7 +1597,7 @@ ul {
   padding: 3%;
   width: 38.5%;
 }
-.payContainer__cvv {
+.payForm__cvv {
   border-color: #ECC9C7;
   border-style: solid;
   margin-right: 2%;
@@ -1607,77 +1607,77 @@ ul {
   margin-top: 3%;
 }
 @media (max-width: 700px) {
-  .payContainer {
+  .payForm {
     width: 100%;
     margin-right: 0;
   }
-  .payContainer__input {
+  .payForm__input {
     width: 100%;
   }
-  .payContainer__name {
+  .payForm__name {
     margin-left: 4%;
     width: 85%;
   }
-  .payContainer__lastName {
+  .payForm__lastName {
     margin-left: 4%;
     width: 85%;
   }
-  .payContainer__documentType {
-    margin-left: 4%;
-    width: 85%;
-    margin-bottom: 0;
-  }
-  .payContainer__documentNumber {
-    margin-left: 4%;
-    width: 85%;
-  }
-  .payContainer__pais {
-    margin-left: 4%;
-    width: 85%;
-  }
-  .payContainer__depto {
-    margin-left: 4%;
-    width: 85%;
-  }
-  .payContainer__city {
+  .payForm__documentType {
     margin-left: 4%;
     width: 85%;
     margin-bottom: 0;
   }
-  .payContainer__direccion {
+  .payForm__documentNumber {
     margin-left: 4%;
     width: 85%;
   }
-  .payContainer__tarjeta {
+  .payForm__pais {
     margin-left: 4%;
     width: 85%;
   }
-  .payContainer__numtarjeta {
+  .payForm__depto {
     margin-left: 4%;
     width: 85%;
   }
-  .payContainer__fechatarjeta {
+  .payForm__city {
+    margin-left: 4%;
+    width: 85%;
+    margin-bottom: 0;
+  }
+  .payForm__direccion {
     margin-left: 4%;
     width: 85%;
   }
-  .payContainer__titularName {
+  .payForm__tarjeta {
     margin-left: 4%;
     width: 85%;
   }
-  .payContainer__cvv {
+  .payForm__numtarjeta {
     margin-left: 4%;
     width: 85%;
   }
-  .payContainer__label {
+  .payForm__fechatarjeta {
+    margin-left: 4%;
+    width: 85%;
+  }
+  .payForm__titularName {
+    margin-left: 4%;
+    width: 85%;
+  }
+  .payForm__cvv {
+    margin-left: 4%;
+    width: 85%;
+  }
+  .payForm__label {
     font-size: 14px;
   }
-  .payContainer__personal {
+  .payForm__personal {
     flex-direction: column;
   }
-  .payContainer__direccionn {
+  .payForm__direccionn {
     flex-direction: column;
   }
-  .payContainer__paggo {
+  .payForm__paggo {
     flex-direction: column;
   }
 }
@@ -2438,4 +2438,38 @@ textarea {
   font-family: "Montserrat";
   color: #5E0019;
   font-size: 30px;
+}
+
+.tCont {
+  display: flex;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  justify-content: center;
+}
+.tCont__sectionCc {
+  display: flex;
+}
+.tCont__tText {
+  font-family: "Martel";
+  color: #5E0019;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+}
+.tCont__message {
+  font-family: "Montserrat";
+  color: #5E0019;
+  font-size: 15px;
+  text-align: center;
+}
+
+.goBacktoStore {
+  margin-left: 30%;
+  margin-top: 4%;
+  background-color: #5E0019;
+  font-family: "Martel";
+  font-size: 15px;
+  color: #FAF5F5;
+  border-radius: 10px;
+  width: 40%;
 }/*# sourceMappingURL=main.css.map */

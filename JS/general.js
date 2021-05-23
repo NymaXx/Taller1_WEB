@@ -48,13 +48,28 @@ toCartBtn.addEventListener('click', ()=>{
 let cart = [];
 const numberOfCart = document.querySelector('.header__pinCartText');
 const CART_COLLECTION = db.collection('cart');
+const ORDERS_COLLECTION = db.collection('orders');
 
 const addToMyCart = (product)=>{
     cart.push(product);
     CART_COLLECTION.doc(loggedUser.uid).set({
       cart,
     });
+    
     numberOfCart.innerText = cart.length;
+};
+let el;
+const deleteFromMyCart = ()=>{
+   /* CART_COLLECTION.doc(uid).get(cart.id)
+    .set(null);*/
+    cart.forEach((i)=>{
+      if(i.id == el){
+        CART_COLLECTION.doc(loggedUser.uid.cart[i]).set(null);
+      }
+    });
+    
+    console.log(el);
+
 };
 
 let renderCart = null;
@@ -71,6 +86,7 @@ const getMyCart = (uid) => {
   
       if(renderCart) renderCart();
       if(renderTotal) renderTotal();
+      
       
   });
 

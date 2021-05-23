@@ -94,180 +94,121 @@
 
         <section class="gnral"> 
 
-                <section class="payContainer">
-
+                <form class="payForm">
                     
-                        <div class="payContainer__title">
+                        <div class="payForm__title">
                             <strong>Información personal:</strong>
                         </div>
-                    <div class="payContainer__personal"> 
-                        <div class="payContainer__name">
-                            <div class="payContainer__label">
+                    <div class="payForm__personal"> 
+                        <div class="payForm__name">
+                            <div class="payForm__label">
                                 Nombre(s):
                             </div>
-                            <input type="text" class="payContainer__input">
+                            <input type="text" class="payForm__input" name="nombres">
                         </div>
 
-                        <div class="payContainer__lastName">
-                            <div class="payContainer__label">
+                        <div class="payForm__lastName">
+                            <div class="payForm__label">
                                 Apellido(s):
                             </div>
-                            <input type="text" class="payContainer__input">
+                            <input type="text" class="payForm__input" name="apellidos">
                         </div>
 
-                        <div class="payContainer__documentType">
-                            <div class="payContainer__label">
+                        <div class="payForm__documentType">
+                            <div class="payForm__label">
                             Tipo de documento:
                             </div>
-                            <input type="text" class="payContainer__input">
+                            <input type="text" class="payForm__input" name="tipoDoc">
                         </div>
 
-                        <div class="payContainer__documentNumber">
-                            <div class="payContainer__label">
+                        <div class="payForm__documentNumber">
+                            <div class="payForm__label">
                                 Numero de documento:
                             </div>
-                            <input type="text" class="payContainer__input">
+                            <input type="number" class="payForm__input" name="numDoc">
                         </div>
                     </div>
 
                     <!-- Paraa direccion -->
-                    <div class="payContainer__title">
+                    <div class="payForm__title">
                         <strong>Dirección:</strong>
                     </div>
 
-                    <div class="payContainer__direccionn"> 
-                        <div class="payContainer__pais">
-                            <div class="payContainer__label">
+                    <div class="payForm__direccionn"> 
+                        <div class="payForm__pais">
+                            <div class="payForm__label">
                                 País:
                             </div>
-                            <input type="text" class="payContainer__input">
+                            <input type="text" class="payForm__input" name="pais">
                         </div>
 
-                        <div class="payContainer__depto">
-                            <div class="payContainer__label">
+                        <div class="payForm__depto">
+                            <div class="payForm__label">
                                 Departamento:
                             </div>
-                            <input type="text" class="payContainer__input">
+                            <input type="text" class="payForm__input" name="depto">
                         </div>
 
-                        <div class="payContainer__city">
-                            <div class="payContainer__label">
+                        <div class="payForm__city">
+                            <div class="payForm__label">
                             Ciudad:
                             </div>
-                            <input type="text" class="payContainer__input">
+                            <input type="text" class="payForm__input" name="ciudad">
                         </div>
 
-                        <div class="payContainer__direccion">
-                            <div class="payContainer__label">
+                        <div class="payForm__direccion">
+                            <div class="payForm__label">
                                 Dirección:
                             </div>
-                            <input type="text" class="payContainer__input">
+                            <input type="text" class="payForm__input" name="dir">
                         </div>
                     </div>
 
                     <!-- Paraa Pago-->
-                    <div class="payContainer__title">
+                    <div class="payForm__title">
                         <strong>Información de pago: </strong>
                     </div>
-                    <div class="payContainer__paggo"> 
-                        <div class="payContainer__tarjeta">
-                            <div class="payContainer__label">
+                    <div class="payForm__paggo"> 
+                        <div class="payForm__tarjeta">
+                            <div class="payForm__label">
                                 Tipo de tarjeta:
                             </div>
-                            <input type="text" class="payContainer__input">
+                            <input type="text" class="payForm__input" name="tipoTarjeta">
                         </div>
 
-                        <div class="payContainer__numtarjeta">
-                            <div class="payContainer__label">
+                        <div class="payForm__numtarjeta">
+                            <div class="payForm__label">
                                 Numero de tarjeta:
                             </div>
-                            <input type="text" class="payContainer__input">
+                            <input type="number" class="payForm__input" name="numTarjeta">
                         </div>
 
-                        <div class="payContainer__fechatarjeta">
-                            <div class="payContainer__label">
+                        <div class="payForm__fechatarjeta">
+                            <div class="payForm__label">
                                 Fecha de caducidad de la tarjeta: (AAAA/MM)
                             </div>
-                            <input type="text" class="payContainer__input">
+                            <input type="text" class="payForm__input" name="fecha">
                         </div>
 
-                        <div class="payContainer__titularName">
-                            <div class="payContainer__label">
+                        <div class="payForm__titularName">
+                            <div class="payForm__label">
                                 Nombre titular:
                             </div>
-                            <input type="text" class="payContainer__input">
+                            <input type="text" class="payForm__input" name="nombreTarjeta">
                         </div>
 
-                        <div class="payContainer__cvv">
-                            <div class="payContainer__label">
+                        <div class="payForm__cvv">
+                            <div class="payForm__label" >
                                 CVV:
                             </div>
-                            <input type="password" class="payContainer__input">
+                            <input type="password" class="payForm__input" name="cvv">
                         </div>
                     </div>
-                </section>
-<!--
-            <section class="orden">
 
-                    <div class="orden__containtergnral">
-                        <div class="orden__title">
-                            Tu Orden
-                        </div>
+                    <button class="orden__finalizarCompraBtn" type="submit">FINALIZAR COMPRA</button>
 
-                        <div class="orden__separaddor"> </div>
-
-                        <table class="orden__table">
-                            <tr>
-                            <td>Subtotal</td>
-                            <td >$ 32.000</td>
-                            </tr>
-                            <tr>
-                            <td>Envio</td>
-                            <td >$ 11.000</td>
-                            </tr>
-                            <tr class="orden__TOTAL">
-                            <td>Total</td>
-                            <td >$ 43.000</td>
-                            </tr>
-                            <tr>
-                        </table>
-                    </div>
-
-                    <button class="orden__comprarBtn"> FINALIZAR COMPRA </button>
-
-                    <div class="orden__resumen">
-                        <div class="orden__resTitle">Resumen del pedido</div>
-                        <div class="orden__separador"></div>
-
-                        <div class="orden__descripcion">
-
-                            <div class="orden__imgLib">
-                                <img src="../imgStore\milveceshastasiempre.jpg" alt=""> 
-                            </div>
-
-                            <div class="orden__descText">
-                                <div class="orden__libroTitle">
-                                    MIL VECES HASTA SIEMPRE
-                                </div>
-                                <div class="orden__datos">
-                                    Autor:Jhon Green <br>
-                                    Tipo:Libro <br>
-                                    ISBN: 9789585643017 <br>
-                                    Cantidad: 1 <br>
-                                    <br>
-                                    Valor unitario: $ 32.000
-                                </div>
-
-                                <div class="orden__totalPrice">
-                                    TOTAL: $ 43.000
-                                </div>
-
-                            </div>
-                            
-                        </div>
-
-                    </div>-->
-            </section>
+            </form>
+            
         </section>
 
        <div class="separador"> </div>

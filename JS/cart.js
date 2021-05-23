@@ -16,7 +16,6 @@ renderCart = ()=>{
                     <p>ISBN: 9789585643017</p> 
                     <p class="cartContainer__precioResponsive">valorU: $ ${data.precio}</p>
                 </small>
-    
                 <button class="cartContainer__deleteItemBtn"> <img class="cartContainer__imgb" src="../imgStore/deleteICON.png" alt="">Eliminar este producto</button>
             </div>
     
@@ -35,6 +34,18 @@ renderCart = ()=>{
         list.appendChild(basicProd);
     
         totalPrice += data.precio;
+
+          //seleccionar el boton para eliminar
+            const deleteBtn = basicProd.querySelector('.cartContainer__deleteItemBtn');
+            deleteBtn.addEventListener('click', ()=>{
+                el = data.id;
+                deleteFromMyCart();
+
+                //console.log(data.name);
+            })
+        
+        
+
      });
 
 
@@ -77,6 +88,7 @@ renderCart = ()=>{
         ordenCheck.classList.add('orden');   
         generalC.appendChild(ordenCheck);
 
+
     }else{
         container.innerHTML = `
         Aun no tienes nada en tu carrito
@@ -84,3 +96,10 @@ renderCart = ()=>{
     }
 
 }
+
+
+
+
+ 
+
+    
