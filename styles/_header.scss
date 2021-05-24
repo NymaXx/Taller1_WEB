@@ -198,7 +198,15 @@
        
 
         @media (max-width: 700px) {  
-            
+
+            &__toCartBtn{
+                height: 34px;
+                border-color: #A1002A40;
+                width: 42px;
+                top: 75%;
+                left: 69%;
+
+            }
 
             &__logo {
                 margin-left: 11%;
@@ -243,6 +251,20 @@
             }   
 
             &__menuResponsive3 {
+                display: inline;
+                margin-left: 6%;
+                margin-right: 6%;
+               
+            }
+
+            &__menuResponsiveLOG {
+                display: inline;
+                margin-left: 6%;
+                margin-right: 6%;
+               
+            }
+
+            &__menuResponsiveSHOP {
                 display: inline;
                 margin-left: 6%;
                 margin-right: 6%;

@@ -36,11 +36,16 @@ firebase.auth().onAuthStateChanged((user) => {
   }
 });
 
-const toCartBtn = document.querySelector('.header__toCartBtn');
-toCartBtn.addEventListener('click', ()=>{
-  location.href = './cart.html';
-});
-
+const toCartBtn = document.querySelectorAll('.header__toCartBtn');
+  toCartBtn.forEach((elem)=>{
+    elem.addEventListener('click', ()=>{
+      if(!loggedUser.admin){
+          location.href = './cart.html';
+      }else{
+        location.href = './adminPedidos.html';
+      }   
+    });
+  })
 
 
 
@@ -82,6 +87,8 @@ const getMyCart = (uid) => {
 
 }
 
+
+let toOrderColection = null;
 
 //cart LOCAL STORAGE
 /*const cartFromLS = localStorage.getItem('dummy__Cart');

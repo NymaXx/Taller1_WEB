@@ -32,6 +32,11 @@ ul {
   height: 48px;
   border-color: #ECC9C7;
 }
+@media (max-width: 700px) {
+  .modalLoginButton {
+    height: 28px;
+  }
+}
 
 .header {
   display: flex;
@@ -190,6 +195,13 @@ ul {
   z-index: 4;
 }
 @media (max-width: 700px) {
+  .header__toCartBtn {
+    height: 34px;
+    border-color: #A1002A40;
+    width: 42px;
+    top: 75%;
+    left: 69%;
+  }
   .header__logo {
     margin-left: 11%;
   }
@@ -220,6 +232,16 @@ ul {
     justify-content: space-between;
   }
   .header__menuResponsive3 {
+    display: inline;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .header__menuResponsiveLOG {
+    display: inline;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .header__menuResponsiveSHOP {
     display: inline;
     margin-left: 6%;
     margin-right: 6%;
@@ -2018,6 +2040,11 @@ ul {
   align-self: center;
 }
 
+.gnralOrders {
+  display: flex;
+  flex-direction: column;
+}
+
 .GnralTitle {
   display: flex;
   font-family: "Martel";
@@ -2032,6 +2059,7 @@ ul {
 .AdminContainer {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 .AdminContainer__res1 {
   display: flex;
@@ -2132,6 +2160,27 @@ ul {
   height: 65px;
   margin-bottom: 10%;
 }
+@media (max-width: 700px) {
+  .AdminContainer {
+    flex-direction: column;
+  }
+  .AdminContainer__res1 {
+    width: 100%;
+  }
+  .AdminContainer__revisionBtn {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .AdminContainer__nombreC {
+    margin-left: 4%;
+  }
+  .AdminContainer__ciudadC {
+    margin-left: 4%;
+  }
+  .AdminContainer__input {
+    font-size: 16px;
+  }
+}
 
 .pedido {
   margin-top: 2%;
@@ -2151,6 +2200,9 @@ ul {
 .pedido__title {
   font-size: 24px;
   font-weight: 500;
+}
+.pedido__resumen {
+  width: 30%;
 }
 .pedido__separaddor {
   background-color: #A1002A60;
@@ -2182,6 +2234,7 @@ ul {
   margin-bottom: 10%;
 }
 .pedido__resTitle {
+  font-family: "Montserrat";
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 2%;
@@ -2198,6 +2251,8 @@ ul {
 }
 .pedido__imgLib {
   margin-right: 8%;
+  height: 80px;
+  margin-left: 3%;
 }
 .pedido__libroTitle {
   font-family: "Martel";
@@ -2221,13 +2276,29 @@ ul {
   font-weight: 800;
   margin-top: 10%;
 }
+@media (max-width: 700px) {
+  .pedido__resumen {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .pedido__imgLib {
+    height: 70px;
+    margin-right: 4%;
+    margin-left: 3%;
+  }
+  .pedido__resTitle {
+    font-size: 20px;
+  }
+  .pedido__separador {
+    margin-bottom: 3%;
+  }
+}
 
 .separadorG {
   background-color: #A1002A60;
   height: 4px;
   width: 100%;
   margin-bottom: 7%;
-  margin-top: 7%;
 }
 
 .list {

@@ -67,8 +67,10 @@
                 <ul class="header__menuResponsive2">
                     <li class="header__menuResponsiveH"> <img src="../img\iconoHAMBURGUESA.png" alt="" height="25px"> </li>
                     <li class="header__menuResponsive3"> <img src="../img\lupaICONMOVIL.png" alt="" height="25px"> </li>
-                    <li class="header__menuResponsive3"> <img src="../img\ingresarMOVIL.png" alt="" height="25px"> </li>
-                    <li class="header__menuResponsive3"> <img src="../img\shopMOVIL.png" alt="" height="25px"> </li>
+                    <li class="header__menuResponsiveLOG"><button class="modalLoginButton"> <img src="../img\ingresarMOVIL.png" alt="" height="25px"> </button> </li>
+                    <button class="header__toCartBtn">
+                        <li class="header__menuResponsiveSHOP"> <img src="../img\shopMOVIL.png" alt="" height="25px"> </li>
+                    </button>
                 </ul>
             </div>
 
@@ -93,99 +95,13 @@
         
     <div class="GnralTitle">PEDIDOS</div>
 
-        <section class="AdminContainer">
-            <div class="AdminContainer__res1">
-                <div class="AdminContainer__title">
-                    <strong>Usuario: <em class="AdminContainer__userName"> KarenX </em> </strong>
-                </div>
-                <div class="AdminContainer__revision"> 
-                    <div class="AdminContainer__nombreC">
-                        <div class="AdminContainer__label">
-                            Nombre(s):
-                        </div>
-                        <input type="text" class="AdminContainer__input">
-                    </div>
+    <section class="gnralOrders">
+        <!--<div class="separadorG"></div>-->
+    </section>
+        
+        
 
-                    <div class="AdminContainer__apellidoC">
-                        <div class="AdminContainer__label">
-                            Apellido(s):
-                        </div>
-                        <input type="text" class="AdminContainer__input">
-                    </div>
-
-                    <div class="AdminContainer__ciudadC">
-                        <div class="AdminContainer__label">
-                            Ciudad:
-                        </div>
-                        <input type="text" class="AdminContainer__input">
-                    </div>
-
-                    <div class="AdminContainer__direccionC">
-                        <div class="AdminContainer__label">
-                            Direccion:
-                        </div>
-                        <input type="text" class="AdminContainer__input">
-                    </div>
-
-                    <div class="AdminContainer__tipoTarjetaC">
-                        <div class="AdminContainer__label">
-                            Tipo de tarjeta:
-                        </div>
-                        <input type="password" class="AdminContainer__input">
-                    </div>
-
-                    <div class="AdminContainer__numTarjetaC">
-                        <div class="AdminContainer__label">
-                            Numero de tarjeta:
-                        </div>
-                        <input type="text" class="AdminContainer__input">
-                    </div>
-                </div>
-            </div>
-
-            <button class="AdminContainer__revisionBtn"> FINALIZAR REVISION </button>
-        </section>
-
-        <section class="pedido">
-
-            <div class="pedido__resumen">
-                <div class="pedido__resTitle">Pedido</div>
-                <div class="pedido__separador"></div>
-
-                <div class="pedido__descripcion">
-
-                    <div class="pedido__imgLib">
-                        <img src="../imgStore\milveceshastasiempre.jpg" alt=""> 
-                    </div>
-
-                    <div class="pedido__descText">
-                        <div class="pedido__libroTitle">
-                            MIL VECES HASTA SIEMPRE
-                        </div>
-                        <div class="pedido__datos">
-                            Autor:Jhon Green <br>
-                            Tipo:Libro <br>
-                            ISBN: 9789585643017 <br>
-                            Cantidad: 1 <br>
-                            <br>
-                            Valor unitario: $ 32.000
-                        </div>
-
-                        <div class="pedido__totalPrice">
-                            TOTAL: $ 43.000
-                        </div>
-
-                        <div class="pedido__enviadoCheckbox">
-                            PEDIDO ENVIADO <input type="checkbox">
-                        </div>
-                    </div>
-                    
-                </div>
-
-            </div>  
-
-            <div class="separadorG"></div>
-        </section>
+        <a href="./store.html"> <button class="AdminContainer__revisionBtn"> FINALIZAR REVISION </button> </a> 
     
     
 
@@ -264,8 +180,8 @@
         <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
         <script src="../JS/menuModal.js"></script>
         <script src="../JS/general.js"></script>
-        
         <script src="../JS/authUtils.js"></script>
+        <script src="../JS/admiPedidos.js"></script>
         <script src="../JS/loginModal.js"></script>
     </body>
 </html>

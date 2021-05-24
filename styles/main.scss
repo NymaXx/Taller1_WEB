@@ -30,6 +30,10 @@ ul {
     border-radius: 30px;
     height: 48px;
     border-color: #ECC9C7;
+
+    @media (max-width: 700px) { 
+        height: 28px;
+     }
 }
 
 

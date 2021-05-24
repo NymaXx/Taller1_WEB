@@ -25,6 +25,7 @@ function userLoggedIn(){
             e.style = 'display:none';
         });
         
+        toOrderColection();
     }
 
     openModal.style = 'display:none';

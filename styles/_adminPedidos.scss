@@ -1,3 +1,9 @@
+
+.gnralOrders{
+    display: flex;
+    flex-direction: column;
+}
+
 .GnralTitle{
     display: flex;
     font-family: 'Martel';
@@ -11,6 +17,7 @@
 .AdminContainer{
     display: flex;
     flex-direction: row;
+    width: 100%;
 
     &__res1{
         display: flex;
@@ -129,6 +136,33 @@
         margin-bottom: 10%;
     }
 
+    @media (max-width: 700px) { 
+        flex-direction: column;
+
+        &__res1{
+            width: 100%;
+        }
+
+        &__revisionBtn{
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        &__nombreC{
+            margin-left: 4%;
+        }
+
+        &__ciudadC{
+            margin-left: 4%;
+        }
+
+        &__input{
+            font-size: 16px;
+
+        }
+
+     }
+
 }
 
 .pedido{
@@ -152,6 +186,10 @@
         
         font-size: 24px;
         font-weight: 500;
+    }
+
+    &__resumen{
+        width:30%
     }
 
     &__separaddor{
@@ -190,7 +228,9 @@
        
     }
 
+
     &__resTitle{
+        font-family: 'Montserrat';
         font-size: 24px;
         font-weight: 500;
         margin-bottom: 2%;
@@ -210,6 +250,8 @@
     }
     &__imgLib{
         margin-right: 8%;
+        height: 80px;
+        margin-left: 3%;
     }
 
     &__libroTitle{
@@ -237,6 +279,31 @@
         font-weight: 800;
         margin-top: 10%;
     }
+
+    @media (max-width: 700px){
+        &__resumen{
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        &__imgLib{
+            height: 70px;
+            margin-right: 4%;
+            margin-left: 3%;
+        }
+
+        &__resTitle{
+            font-size: 20px;
+        }
+
+        &__separador{
+            margin-bottom: 3%;
+    
+        }
+
+       
+    
+    }
 }
 
 .separadorG{
@@ -244,5 +311,4 @@
     height: 4px;
     width: 100%;
     margin-bottom: 7%;
-    margin-top: 7%;
 }
