@@ -83,7 +83,8 @@ productForm.addEventListener('submit', (event) => {
 
 
 
-
-if(!loggedUser || !loggedUser.admin){
-    location.href = '/html/store.html';
-}
+setInterval(() => {
+    if(!loggedUser || !loggedUser.admin){
+        location.href = '/html/store.html';
+    }
+}, 2000);
